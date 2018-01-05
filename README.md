@@ -7,8 +7,9 @@
 1. Install settings
 
 ```bash
-ln -s -f dotfiles/tmux/tmux.conf ~/.tmux.conf
-ln -s -f dotfiles/tmux/tmux.conf.local ~/.tmux.conf.local
+cd
+ln -s -f ~/dotfiles/tmux/tmux.conf ~/.tmux.conf
+ln -s -f ~/dotfiles/tmux/tmux.conf.local ~/.tmux.conf.local
 ```
 
 ## Oh My ZSH
@@ -24,7 +25,7 @@ sh -c "$(curl -fsSL https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/mas
 1. Link .zshrc
 
 ```bash
-ln -s dotfiles/zshrc ~/.zshrc
+ln -s -f ~/dotfiles/zshrc ~/.zshrc
 ```
 
 ## NeoVim
@@ -41,7 +42,7 @@ curl -fLo ~/.local/share/nvim/site/autoload/plug.vim --create-dirs \
 1. Install init.vim
 
 ```bash
-ln -s -f dotfiles/init.vim ~/.config/nvim/init.vim
+ln -s -f ~/dotfiles/nvim-config/init.vim ~/.config/nvim/init.vim
 ```
 
 1. Install plugins
