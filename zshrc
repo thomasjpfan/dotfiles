@@ -1,0 +1,25 @@
+export ZSH=$HOME/.oh-my-zsh
+
+ZSH_THEME="spaceship"
+ZSH_CUSTOM=$HOME/dotfiles/zsh_custom
+SPACESHIP_BATTERY_SHOW=false
+
+plugins=(tmux z zsh-autosuggestions zsh-syntax-highlighting)
+zstyle ':bracketed-paste-magic' active-widgets '.self-*'
+
+if [ -f "$HOME/.bash_profile" ]; then
+	source "$HOME/.bash_profile"
+elif [ -f "$HOME/.bashrc" ]; then
+	source "$HOME/.bashrc"
+fi
+source $ZSH/oh-my-zsh.sh
+
+bindkey '^t' autosuggest-execute
+
+export EDITOR="nvim"
+alias vim="nvim"
+alias p3="python3"
+alias i3="ipython3"
+
+export HISTCONTROL=ignoreboth:erasedups
+export ZSH_AUTOSUGGEST_BUFFER_MAX_SIZE=20
