@@ -23,3 +23,7 @@ alias i3="ipython3"
 
 export HISTCONTROL=ignoreboth:erasedups
 export ZSH_AUTOSUGGEST_BUFFER_MAX_SIZE=20
+
+if _exists direnv; then
+	eval "$(direnv hook zsh)"
+fi
