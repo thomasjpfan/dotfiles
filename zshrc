@@ -2,6 +2,7 @@ export ZSH=$HOME/.oh-my-zsh
 
 ZSH_THEME="spaceship"
 ZSH_CUSTOM=$HOME/dotfiles/zsh_custom
+SPACESHIP_DIR_TRUNC=0
 SPACESHIP_BATTERY_SHOW=false
 
 plugins=(tmux z zsh-autosuggestions zsh-syntax-highlighting)
