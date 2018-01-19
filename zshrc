@@ -1,9 +1,16 @@
 export ZSH=$HOME/.oh-my-zsh
+SPACESHIP_ROOT=$HOME/dotfiles/zsh_custom/themes
 
-ZSH_THEME="spaceship"
 ZSH_CUSTOM=$HOME/dotfiles/zsh_custom
 SPACESHIP_DIR_TRUNC=0
 SPACESHIP_BATTERY_SHOW=false
+ZSH_THEME="spaceship"
+SPACESHIP_HG_SHOW=false
+SPACESHIP_ELIXIR_SHOW=false
+SPACESHIP_PHP_SHOW=false
+SPACESHIP_RUST_SHOW=false
+SPACESHIP_JULIA_SHOW=false
+SPACESHIP_EMBER_SHOW=false
 
 plugins=(tmux z zsh-autosuggestions zsh-syntax-highlighting)
 zstyle ':bracketed-paste-magic' active-widgets '.self-*'
