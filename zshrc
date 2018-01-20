@@ -1,4 +1,5 @@
 export ZSH=$HOME/.oh-my-zsh
+fpath=( "$HOME/.zfunctions" $fpath )
 
 ZSH_CUSTOM=$HOME/dotfiles/zsh_custom
 SPACESHIP_DIR_TRUNC=5
@@ -34,6 +35,6 @@ export ZSH_AUTOSUGGEST_BUFFER_MAX_SIZE=20
 autoload -U promptinit; promptinit
 prompt spaceship
 
-if ! [ -x "$(command -v direnv)" ]; then
+if [ -x "$(command -v direnv)" ]; then
     eval "$(direnv hook zsh)"
 fi

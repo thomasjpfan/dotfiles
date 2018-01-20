@@ -33,7 +33,8 @@ ln -sf ~/dotfiles/zshrc ~/.zshrc
 ```bash
 git submodule init
 git submodule update
-ln -sf ~/dotfiles/spaceship-prompt/spaceship.zsh /usr/local/share/zsh/site-functions/prompt_spaceship_setup
+mkdir ~/.zfunctions
+ln -sf ~/dotfiles/spaceship-prompt/spaceship.zsh ~/.zfunctions/prompt_spaceship_setup
 ```
 
 ## NeoVim
