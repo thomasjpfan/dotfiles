@@ -12,7 +12,7 @@ SPACESHIP_JULIA_SHOW=false
 SPACESHIP_EMBER_SHOW=false
 
 
-plugins=(tmux z zsh-autosuggestions zsh-syntax-highlighting)
+plugins=(tmux z zsh-autosuggestions zsh-syntax-highlighting docker)
 zstyle ':bracketed-paste-magic' active-widgets '.self-*'
 
 if [ -f "$HOME/.bash_profile" ]; then
