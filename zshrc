@@ -11,6 +11,8 @@ SPACESHIP_RUST_SHOW=false
 SPACESHIP_JULIA_SHOW=false
 SPACESHIP_EMBER_SHOW=false
 
+# Tell homebrew to not autoupdate every single time I run it (just once a week).
+export HOMEBREW_AUTO_UPDATE_SECS=604800
 
 plugins=(tmux z zsh-autosuggestions zsh-syntax-highlighting docker)
 zstyle ':bracketed-paste-magic' active-widgets '.self-*'
