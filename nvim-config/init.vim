@@ -388,8 +388,8 @@ let g:neomake_javascript_makers = ['jshint']
 let g:neomake_go_makers = ['go', 'golint', 'errcheck']
 
 " Run every save
-autocmd! BufWritePost * Neomake
-let g:neomake_open_list = 2
+" autocmd! BufWritePost * Neomake
+" let g:neomake_open_list = 2
 
 
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
