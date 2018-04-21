@@ -10,6 +10,7 @@ SPACESHIP_PHP_SHOW=false
 SPACESHIP_RUST_SHOW=false
 SPACESHIP_JULIA_SHOW=false
 SPACESHIP_EMBER_SHOW=false
+SPACESHIP_KUBECONTEXT_SHOW=false
 
 # Tell homebrew to not autoupdate every single time I run it (just once a week).
 export HOMEBREW_AUTO_UPDATE_SECS=604800
