@@ -59,3 +59,7 @@ ln -s -f ~/dotfiles/nvim-config/init.vim ~/.config/nvim/init.vim
 ```bash
 nvim -c ":PlugInstall"
 ```
+
+## OSX only
+
+1. `./configure_osx.bash`
