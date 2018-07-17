@@ -12,6 +12,15 @@ ln -s -f ~/dotfiles/tmux/tmux.conf ~/.tmux.conf
 ln -s -f ~/dotfiles/tmux/tmux.conf.local ~/.tmux.conf.local
 ```
 
+## Git
+
+1. Symlink
+
+```bash
+ln -sf ~/dotfiles/git/gitconfig ~/.gitconfig
+ln -sf ~/dotfiles/git/gitignore_global ~/.gitignore_global
+```
+
 ## Oh My ZSH
 
 1. Install zsh

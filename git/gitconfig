@@ -1,0 +1,93 @@
+[core]
+    quotepath = false
+	excludesfile = ~/.gitignore_global
+    editor = vim
+    autocrlf = input
+[user]
+	name = Thomas Fan
+	email = thomasjpfan@gmail.com
+[push]
+    default = simple
+[difftool "Kaleidoscope"]
+    cmd = ksdiff --partial-changeset --relative-path \"$MERGED\" -- \"$LOCAL\" \"$REMOTE\"
+[diff]
+    tool = Kaleidoscope
+[difftool]
+	prompt = false
+[mergetool "Kaleidoscope"]
+    cmd = ksdiff --merge --output \"$MERGED\" --base \"$BASE\" -- \"$LOCAL\" --snapshot \"$REMOTE\" --snapshot
+    trustExitCode = true
+[mergetool]
+	prompt = false
+    keepBackup = false
+[merge]
+    tool = Kaleidoscope
+[alias]
+    slog = log --oneline --topo-order --graph
+    unstage = reset HEAD --
+    last = log -1 HEAD
+    ds = difftool --staged      # git ds - diff your staged changes == review before committing.
+    st = status -sb         # smarter status - include tag and branch info
+
+    # some resets without explanation
+    r = reset
+    r1 = reset HEAD^
+    r2 = reset HEAD^^
+    rh = reset --hard
+    rh1 = reset HEAD^ --hard
+    rh2 = reset HEAD^^ --hard
+
+    # basic shortcuts
+    cp = cherry-pick
+    cl = clone
+    ci = commit
+    co = checkout
+    br = branch
+    diff = difftool --word-diff
+    dc = difftool --cached
+
+    # stash shortcuts
+    sl = stash list
+    sa = stash apply
+    ss = stash save
+
+    # log related - thanks to @mwd410
+    l = log
+    lh = log --graph
+    la = !git lh --date-order --all 2> /dev/null
+    lb = log --graph --simplify-by-decoration
+    lba = !git lb --all
+    h = !git --no-pager log --graph -n 15
+    a = !git --no-pager la -n 15
+
+    # other
+    amend = commit --amend -C HEAD
+    undo = reset --soft HEAD^
+
+    up = "!git remote update -p; git merge --ff-only @{u}"
+    switch = !legit switch \"$@\"
+    branches = !legit branches
+    sprout = !legit sprout \"$@\"
+    unpublish = !legit unpublish \"$@\"
+    harvest = !legit harvest \"$@\"
+    sync = !legit sync \"$@\"
+    publish = !legit publish \"$@\"
+    graft = !legit graft \"$@\"
+    lg = log --oneline --decorate --all --graph
+    s = status -s
+[credential]
+	helper = osxkeychain
+[branch]
+    autosetuprebase = always
+[filter "media"]
+    required = true
+    clean = git media clean %f
+    smudge = git media smudge %f
+[pull]
+    rebase = true
+[rerere]
+    enabled = true
+[color]
+    ui = true
+[credential "https://github.com"]
+    username = thomasjpfan
