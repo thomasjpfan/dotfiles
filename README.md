@@ -57,7 +57,7 @@ ln -s -f ~/dotfiles/nvim-config/init.vim ~/.config/nvim/init.vim
 4. Install plugins
 
 ```bash
-nvim -c ":PlugInstall"
+nvim +PlugInstall +qall
 ```
 
 ## OSX only
