@@ -60,6 +60,14 @@ ln -s -f ~/dotfiles/nvim-config/init.vim ~/.config/nvim/init.vim
 nvim +PlugInstall +qall
 ```
 
+## Conda config
+
+1. Install
+
+```bash
+ln -sf ~/dotfiles/condarc ~/.condarc
+```
+
 ## OSX only
 
 1. `./configure_osx.bash`
