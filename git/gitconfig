@@ -6,6 +6,7 @@
 [user]
 	name = Thomas Fan
 	email = thomasjpfan@gmail.com
+	signingkey = 5053916AEEEBE585
 [push]
     default = simple
 [difftool "Kaleidoscope"]
@@ -91,3 +92,5 @@
     ui = true
 [credential "https://github.com"]
     username = thomasjpfan
+[commit]
+	gpgsign = true
