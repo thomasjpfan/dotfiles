@@ -31,6 +31,8 @@ export EDITOR="nvim"
 alias vim="nvim"
 alias p3="python3"
 alias i3="ipython3"
+alias k=kubectl
+alias kcd='kubectl config set-context $(kubectl config currentcontext) --namespace '
 
 export HISTCONTROL=ignoreboth:erasedups
 export ZSH_AUTOSUGGEST_BUFFER_MAX_SIZE=20
