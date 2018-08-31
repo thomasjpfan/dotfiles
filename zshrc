@@ -31,6 +31,8 @@ export EDITOR="nvim"
 alias vim="nvim"
 alias p3="python3"
 alias i3="ipython3"
+alias ping='prettyping --nolegend'
+alias cat='bat'
 
 export HISTCONTROL=ignoreboth:erasedups
 export ZSH_AUTOSUGGEST_BUFFER_MAX_SIZE=20
