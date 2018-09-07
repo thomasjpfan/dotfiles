@@ -38,6 +38,7 @@ alias cat='bat'
 
 export HISTCONTROL=ignoreboth:erasedups
 export ZSH_AUTOSUGGEST_BUFFER_MAX_SIZE=20
+export LESS="-SRXF"
 
 autoload -U promptinit; promptinit
 prompt spaceship
