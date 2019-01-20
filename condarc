@@ -1,2 +1,4 @@
-ssl_verify: 'True'
+ssl_verify: true
 changeps1: false
+channels:
+  - defaults
