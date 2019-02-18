@@ -1,5 +1,5 @@
 export ZSH=$HOME/.oh-my-zsh
-fpath=( "$HOME/.zfunctions" $fpath )
+fpath=("$HOME/.zfunctions" $fpath)
 
 ZSH_CUSTOM=$HOME/dotfiles/zsh_custom
 SPACESHIP_DIR_TRUNC=5
@@ -40,9 +40,28 @@ export HISTCONTROL=ignoreboth:erasedups
 export ZSH_AUTOSUGGEST_BUFFER_MAX_SIZE=20
 export LESS="-SRXF"
 
-autoload -U promptinit; promptinit
+autoload -U promptinit
+promptinit
 prompt spaceship
 
 if [ -x "$(command -v direnv)" ]; then
-    eval "$(direnv hook zsh)"
+	eval "$(direnv hook zsh)"
 fi
+
+gfpr() {
+	git fetch upstream pull/$1/head:pr-$1
+	git checkout pr-$1
+}
+
+gppr() {
+	BRANCH=$(git rev-parse --abbrev-ref HEAD)
+	if [[ "$BRANCH" == pr-* ]]; then
+		pr=${BRANCH#pr-}
+		git pull upstream refs/pull/$pr/head
+		return
+	fi
+	echo "Not in a PR branch"
+}
+
+# added by travis gem
+[ -f /Users/thomasfan/.travis/travis.sh ] && source /Users/thomasfan/.travis/travis.sh
