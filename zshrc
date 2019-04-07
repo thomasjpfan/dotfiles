@@ -48,20 +48,5 @@ if [ -x "$(command -v direnv)" ]; then
 	eval "$(direnv hook zsh)"
 fi
 
-gfpr() {
-	git fetch upstream pull/$1/head:pr-$1
-	git checkout pr-$1
-}
-
-gppr() {
-	BRANCH=$(git rev-parse --abbrev-ref HEAD)
-	if [[ "$BRANCH" == pr-* ]]; then
-		pr=${BRANCH#pr-}
-		git pull upstream refs/pull/$pr/head
-		return
-	fi
-	echo "Not in a PR branch"
-}
-
 # added by travis gem
 [ -f /Users/thomasfan/.travis/travis.sh ] && source /Users/thomasfan/.travis/travis.sh
