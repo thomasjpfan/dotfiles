@@ -15,13 +15,13 @@ SPACESHIP_KUBECONTEXT_SHOW=false
 # Tell homebrew to not autoupdate every single time I run it (just once a week).
 export HOMEBREW_AUTO_UPDATE_SECS=604800
 
-plugins=(tmux z zsh-autosuggestions zsh-syntax-highlighting docker)
+plugins=(tmux z zsh-autosuggestions zsh-syntax-highlighting docker gpg-agent)
 zstyle ':bracketed-paste-magic' active-widgets '.self-*'
 
 if [ -f "$HOME/.bash_profile" ]; then
-	source "$HOME/.bash_profile"
+    source "$HOME/.bash_profile"
 elif [ -f "$HOME/.bashrc" ]; then
-	source "$HOME/.bashrc"
+    source "$HOME/.bashrc"
 fi
 source $ZSH/oh-my-zsh.sh
 
@@ -45,8 +45,24 @@ promptinit
 prompt spaceship
 
 if [ -x "$(command -v direnv)" ]; then
-	eval "$(direnv hook zsh)"
+    eval "$(direnv hook zsh)"
 fi
 
 # added by travis gem
 [ -f /Users/thomasfan/.travis/travis.sh ] && source /Users/thomasfan/.travis/travis.sh
+
+# >>> conda initialize >>>
+# !! Contents within this block are managed by 'conda init' !!
+__conda_setup="$('/Users/thomasfan/anaconda3/bin/conda' 'shell.zsh' 'hook' 2> /dev/null)"
+if [ $? -eq 0 ]; then
+    eval "$__conda_setup"
+else
+    if [ -f "/Users/thomasfan/anaconda3/etc/profile.d/conda.sh" ]; then
+        . "/Users/thomasfan/anaconda3/etc/profile.d/conda.sh"
+    else
+        export PATH="/Users/thomasfan/anaconda3/bin:$PATH"
+    fi
+fi
+unset __conda_setup
+# <<< conda initialize <<<
+

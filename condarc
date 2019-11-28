@@ -2,4 +2,5 @@ ssl_verify: true
 changeps1: false
 channels:
   - defaults
-sat_solver: pycryptosat
+restore_free_channel: true
+auto_activate_base: false
