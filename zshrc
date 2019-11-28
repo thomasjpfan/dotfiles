@@ -29,11 +29,6 @@ bindkey '^t' autosuggest-execute
 
 export EDITOR="nvim"
 alias vim="nvim"
-alias p3="python3"
-alias i3="ipython3"
-alias k=kubectl
-alias kcd='kubectl config set-context $(kubectl config currentcontext) --namespace '
-alias ping='prettyping --nolegend'
 alias cat='bat'
 
 export HISTCONTROL=ignoreboth:erasedups
@@ -47,22 +42,3 @@ prompt spaceship
 if [ -x "$(command -v direnv)" ]; then
     eval "$(direnv hook zsh)"
 fi
-
-# added by travis gem
-[ -f /Users/thomasfan/.travis/travis.sh ] && source /Users/thomasfan/.travis/travis.sh
-
-# >>> conda initialize >>>
-# !! Contents within this block are managed by 'conda init' !!
-__conda_setup="$('/Users/thomasfan/anaconda3/bin/conda' 'shell.zsh' 'hook' 2> /dev/null)"
-if [ $? -eq 0 ]; then
-    eval "$__conda_setup"
-else
-    if [ -f "/Users/thomasfan/anaconda3/etc/profile.d/conda.sh" ]; then
-        . "/Users/thomasfan/anaconda3/etc/profile.d/conda.sh"
-    else
-        export PATH="/Users/thomasfan/anaconda3/bin:$PATH"
-    fi
-fi
-unset __conda_setup
-# <<< conda initialize <<<
-
