@@ -58,3 +58,5 @@ fi
 unset __conda_setup
 # <<< conda initialize <<<
 
+# Created by `userpath` on 2020-01-14 22:19:15
+export PATH="$PATH:$HOME/.local/bin"

@@ -4,3 +4,4 @@ channels:
   - defaults
 restore_free_channel: true
 auto_activate_base: false
+show_channel_urls: true
