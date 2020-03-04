@@ -66,14 +66,6 @@
     undo = reset --soft HEAD^
 
     up = "!git remote update -p; git merge --ff-only @{u}"
-    switch = !legit switch \"$@\"
-    branches = !legit branches
-    sprout = !legit sprout \"$@\"
-    unpublish = !legit unpublish \"$@\"
-    harvest = !legit harvest \"$@\"
-    sync = !legit sync \"$@\"
-    publish = !legit publish \"$@\"
-    graft = !legit graft \"$@\"
     lg = log --oneline --decorate --all --graph
     s = status -s
 [credential]

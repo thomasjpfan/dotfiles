@@ -30,6 +30,7 @@ bindkey '^t' autosuggest-execute
 export EDITOR="nvim"
 alias vim="nvim"
 alias cat='bat'
+alias mux='tmuxinator'
 
 export HISTCONTROL=ignoreboth:erasedups
 export ZSH_AUTOSUGGEST_BUFFER_MAX_SIZE=20
