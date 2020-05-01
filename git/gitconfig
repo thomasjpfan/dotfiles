@@ -43,7 +43,7 @@
     cl = clone
     ci = commit
     co = checkout
-    br = branch
+	br = branch --sort=-committerdate -v
     diff = difftool --word-diff
     dc = difftool --cached
 

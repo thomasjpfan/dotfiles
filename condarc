@@ -1,6 +1,7 @@
 ssl_verify: true
 changeps1: false
 channels:
+  - conda-forge
   - defaults
 restore_free_channel: true
 auto_activate_base: false
