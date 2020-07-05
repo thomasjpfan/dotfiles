@@ -6,7 +6,7 @@
 [user]
 	name = Thomas J. Fan
 	email = thomasjpfan@gmail.com
-	signingkey = 5053916AEEEBE585
+    signingkey = C6568940AC51A821
 [push]
     default = simple
 [difftool "Kaleidoscope"]
