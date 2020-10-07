@@ -20,7 +20,8 @@ zstyle ':bracketed-paste-magic' active-widgets '.self-*'
 
 if [ -f "$HOME/.bash_profile" ]; then
     source "$HOME/.bash_profile"
-elif [ -f "$HOME/.bashrc" ]; then
+fi
+if [ -f "$HOME/.bashrc" ]; then
     source "$HOME/.bashrc"
 fi
 source $ZSH/oh-my-zsh.sh
