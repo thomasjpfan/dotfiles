@@ -52,9 +52,10 @@ _zsh_highlight_regexp_highlighter_loop()
   local buf="$1" pat="$2"
   integer OFFSET=0
   local MATCH; integer MBEGIN MEND
+  local -a match mbegin mend
   while true; do
     [[ "$buf" =~ "$pat" ]] || return;
-    region_highlight+=("$((MBEGIN - 1 + OFFSET)) $((MEND + OFFSET)) $ZSH_HIGHLIGHT_REGEXP[$pat]")
+    region_highlight+=("$((MBEGIN - 1 + OFFSET)) $((MEND + OFFSET)) $ZSH_HIGHLIGHT_REGEXP[$pat], memo=zsh-syntax-highlighting")
     buf="$buf[$(($MEND+1)),-1]"
     OFFSET=$((MEND+OFFSET));
   done

@@ -1,5 +1,5 @@
 # -------------------------------------------------------------------------------------------------
-# Copyright (c) 2010-2016 zsh-syntax-highlighting contributors
+# Copyright (c) 2010-2017 zsh-syntax-highlighting contributors
 # All rights reserved.
 #
 # Redistribution and use in source and binary forms, with or without modification, are permitted
@@ -51,8 +51,9 @@ _zsh_highlight_highlighter_brackets_paint()
   local -A levelpos lastoflevel matching
 
   # Find all brackets and remember which one is matching
-  for (( pos = 1; pos <= buflen; pos++ )) ; do
-    char=$BUFFER[pos]
+  pos=0
+  for char in ${(s..)BUFFER} ; do
+    (( ++pos ))
     case $char in
       ["([{"])
         levelpos[$pos]=$((++level))
