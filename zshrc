@@ -19,12 +19,6 @@ export HOMEBREW_AUTO_UPDATE_SECS=604800
 plugins=(tmux z zsh-autosuggestions zsh-syntax-highlighting gpg-agent)
 zstyle ':bracketed-paste-magic' active-widgets '.self-*'
 
-if [ -f "$HOME/.bash_profile" ]; then
-    source "$HOME/.bash_profile"
-fi
-if [ -f "$HOME/.bashrc" ]; then
-    source "$HOME/.bashrc"
-fi
 source $ZSH/oh-my-zsh.sh
 
 bindkey '^t' autosuggest-execute
@@ -38,6 +32,32 @@ export HISTCONTROL=ignoreboth:erasedups
 export ZSH_AUTOSUGGEST_BUFFER_MAX_SIZE=20
 export LESS="-SRXF"
 
+export OS=$(uname)
+export LC_ALL=en_US.UTF-8
+export LANG=en_US.UTF-8
+export LANGUAGE=en_US.UTF-8
+export PATH=$HOME/anaconda3/bin:$PATH
+
+# gpg agent
+export GPG_TTY=$(tty)
+
+# homebrew
+if [[ $OS = "Darwin" ]]; then
+    export PATH=/usr/local/bin:$PATH
+
+    # libomp
+    export OMP_NUM_THREADS=8
+    export CC=/usr/bin/clang
+    export CXX=/usr/bin/clang++
+    export CPPFLAGS="$CPPFLAGS -Xpreprocessor -fopenmp"
+    export CFLAGS="$CFLAGS -I/usr/local/opt/libomp/include"
+    export CXXFLAGS="$CXXFLAGS -I/usr/local/opt/libomp/include"
+    export LDFLAGS="$LDFLAGS -Wl,-rpath,/usr/local/opt/libomp/lib -L/usr/local/opt/libomp/lib -lomp"
+
+    export PATH="$HOME/.cargo/bin:$PATH"
+    source "$HOME/.bash_profile"
+fi
+
 autoload -U promptinit
 promptinit
 prompt spaceship
@@ -48,7 +68,7 @@ fi
 
 # >>> conda initialize >>>
 # !! Contents within this block are managed by 'conda init' !!
-__conda_setup="$('/Users/thomasfan/anaconda3/bin/conda' 'shell.zsh' 'hook' 2> /dev/null)"
+__conda_setup="$('/Users/thomasfan/anaconda3/bin/conda' 'shell.zsh' 'hook' 2>/dev/null)"
 if [ $? -eq 0 ]; then
     eval "$__conda_setup"
 else
