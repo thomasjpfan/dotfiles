@@ -16,7 +16,7 @@ SPACESHIP_DOCKER_SHOW=false
 # Tell homebrew to not autoupdate every single time I run it (just once a week).
 export HOMEBREW_AUTO_UPDATE_SECS=604800
 
-plugins=(tmux z extract git gpg-agent zsh-syntax-highlighting
+plugins=(tmux z extract git gpg-agent fzf zsh-syntax-highlighting
     zsh-autosuggestions)
 
 zstyle ':bracketed-paste-magic' active-widgets '.self-*'
