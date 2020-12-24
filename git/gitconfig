@@ -25,58 +25,12 @@
     tool = Kaleidoscope
 [alias]
     slog = log --oneline --topo-order --graph
-    unstage = reset HEAD --
-    last = log -1 HEAD
     ds = difftool --staged      # git ds - diff your staged changes == review before committing.
-    st = status -sb         # smarter status - include tag and branch info
 
-    # some resets without explanation
-    r = reset
-    r1 = reset HEAD^
-    r2 = reset HEAD^^
-    rh = reset --hard
-    rh1 = reset HEAD^ --hard
-    rh2 = reset HEAD^^ --hard
-
-    # basic shortcuts
-    cp = cherry-pick
-    cl = clone
-    ci = commit
-    co = checkout
-	br = branch --sort=-committerdate -v
-    diff = difftool --word-diff
-    dc = difftool --cached
-
-    # stash shortcuts
-    sl = stash list
-    sa = stash apply
-    ss = stash save
-
-    # log related - thanks to @mwd410
-    l = log
-    lh = log --graph
-    la = !git lh --date-order --all 2> /dev/null
-    lb = log --graph --simplify-by-decoration
-    lba = !git lb --all
-    h = !git --no-pager log --graph -n 15
-    a = !git --no-pager la -n 15
-
-    # other
-    amend = commit --amend -C HEAD
-    undo = reset --soft HEAD^
-
-    up = "!git remote update -p; git merge --ff-only @{u}"
-    lg = log --oneline --decorate --all --graph
-    s = status -s
-[credential]
 	helper = osxkeychain
 [branch]
     autosetuprebase = always
     autoSetupMerge = false
-[filter "media"]
-    required = true
-    clean = git media clean %f
-    smudge = git media smudge %f
 [pull]
     rebase = true
 [rerere]
@@ -87,10 +41,5 @@
     username = thomasjpfan
 [commit]
 	gpgsign = true
-[filter "lfs"]
-	clean = git-lfs clean -- %f
-	smudge = git-lfs smudge -- %f
-	process = git-lfs filter-process
-	required = true
 [fetch]
 	parallel = 0
