@@ -1,3 +1,16 @@
+# rust
+[[ -d "$HOME/.cargo/bin" ]] &&
+    export PATH=$HOME/.cargo/bin:$PATH
+[[ -e "$HOME/.cargo/env" ]] &&
+    source $HOME/.cargo/env
+
+type nvim >/dev/null &&
+    alias vi=nvim &&
+    alias vim=nvim
+
+type cat >/dev/null &&
+    alias cat='bat'
+
 export ZSH=$HOME/.oh-my-zsh
 fpath=("$HOME/.zfunctions" $fpath)
 
@@ -25,11 +38,6 @@ source $ZSH/oh-my-zsh.sh
 
 bindkey '^t' autosuggest-execute
 
-export EDITOR="nvim"
-alias vim="nvim"
-alias cat='bat'
-alias mux='tmuxinator'
-
 export HISTCONTROL=ignoreboth:erasedups
 export ZSH_AUTOSUGGEST_BUFFER_MAX_SIZE=20
 export OS=$(uname)
@@ -55,8 +63,6 @@ if [[ $OS = "Darwin" ]]; then
     export CFLAGS="$CFLAGS -I/usr/local/opt/libomp/include"
     export CXXFLAGS="$CXXFLAGS -I/usr/local/opt/libomp/include"
     export LDFLAGS="$LDFLAGS -Wl,-rpath,/usr/local/opt/libomp/lib -L/usr/local/opt/libomp/lib -lomp"
-
-    export PATH="$HOME/.cargo/bin:$PATH"
     source "$HOME/.bash_profile"
 fi
 
