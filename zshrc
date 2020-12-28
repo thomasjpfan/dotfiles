@@ -73,21 +73,3 @@ prompt spaceship
 if [ -x "$(command -v direnv)" ]; then
     eval "$(direnv hook zsh)"
 fi
-
-# >>> conda initialize >>>
-# !! Contents within this block are managed by 'conda init' !!
-__conda_setup="$('/Users/thomasfan/miniconda3/bin/conda' 'shell.zsh' 'hook' 2>/dev/null)"
-if [ $? -eq 0 ]; then
-    eval "$__conda_setup"
-else
-    if [ -f "/Users/thomasfan/miniconda3/etc/profile.d/conda.sh" ]; then
-        . "/Users/thomasfan/miniconda3/etc/profile.d/conda.sh"
-    else
-        export PATH="/Users/thomasfan/miniconda3/bin:$PATH"
-    fi
-fi
-unset __conda_setup
-# <<< conda initialize <<<
-
-# Created by `userpath` on 2020-01-14 22:19:15
-export PATH="$PATH:$HOME/.local/bin"
