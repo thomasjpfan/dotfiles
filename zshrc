@@ -8,7 +8,7 @@ type nvim >/dev/null &&
     alias vi=nvim &&
     alias vim=nvim
 
-type cat >/dev/null &&
+type bat >/dev/null &&
     alias cat='bat'
 
 export ZSH=$HOME/.oh-my-zsh
