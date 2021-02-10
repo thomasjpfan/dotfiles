@@ -56,13 +56,13 @@ if [[ $OS = "Darwin" ]]; then
     export PATH=/usr/local/bin:$PATH
 
     # libomp
-    export OMP_NUM_THREADS=8
-    export CC=/usr/bin/clang
-    export CXX=/usr/bin/clang++
-    export CPPFLAGS="$CPPFLAGS -Xpreprocessor -fopenmp"
-    export CFLAGS="$CFLAGS -I/usr/local/opt/libomp/include"
-    export CXXFLAGS="$CXXFLAGS -I/usr/local/opt/libomp/include"
-    export LDFLAGS="$LDFLAGS -Wl,-rpath,/usr/local/opt/libomp/lib -L/usr/local/opt/libomp/lib -lomp"
+    # export OMP_NUM_THREADS=8
+    # export CC=/usr/bin/clang
+    # export CXX=/usr/bin/clang++
+    # export CPPFLAGS="$CPPFLAGS -Xpreprocessor -fopenmp"
+    # export CFLAGS="$CFLAGS -I/usr/local/opt/libomp/include"
+    # export CXXFLAGS="$CXXFLAGS -I/usr/local/opt/libomp/include"
+    # export LDFLAGS="$LDFLAGS -Wl,-rpath,/usr/local/opt/libomp/lib -L/usr/local/opt/libomp/lib -lomp"
     source "$HOME/.bash_profile"
 fi
 
@@ -88,4 +88,3 @@ else
 fi
 unset __conda_setup
 # <<< conda initialize <<<
-
