@@ -43,3 +43,5 @@
 	gpgsign = true
 [fetch]
 	parallel = 0
+[init]
+	defaultBranch = main
