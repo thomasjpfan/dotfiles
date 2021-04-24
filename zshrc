@@ -47,7 +47,7 @@ export LESS="-SRXF"
 export LC_ALL=en_US.UTF-8
 export LANG=en_US.UTF-8
 export LANGUAGE=en_US.UTF-8
-export PATH=$HOME/miniconda3/bin:$PATH
+# export PATH=$HOME/miniconda3/bin:$PATH
 
 # gpg agent
 export GPG_TTY=$(tty)
