@@ -47,7 +47,7 @@ export LESS="-SRXF"
 export LC_ALL=en_US.UTF-8
 export LANG=en_US.UTF-8
 export LANGUAGE=en_US.UTF-8
-# export PATH=$HOME/miniconda3/bin:$PATH
+export PATH=$HOME/miniconda3/bin:$PATH
 
 # gpg agent
 export GPG_TTY=$(tty)
@@ -58,12 +58,13 @@ if [[ $OS = "Darwin" ]]; then
 
     # libomp
     # export OMP_NUM_THREADS=8
-    # export CC=/usr/bin/clang
-    # export CXX=/usr/bin/clang++
-    # export CPPFLAGS="$CPPFLAGS -Xpreprocessor -fopenmp"
-    # export CFLAGS="$CFLAGS -I/usr/local/opt/libomp/include"
-    # export CXXFLAGS="$CXXFLAGS -I/usr/local/opt/libomp/include"
-    # export LDFLAGS="$LDFLAGS -Wl,-rpath,/usr/local/opt/libomp/lib -L/usr/local/opt/libomp/lib -lomp"
+    export CC=/usr/bin/clang
+    export CXX=/usr/bin/clang++
+    export CPPFLAGS="$CPPFLAGS -Xpreprocessor -fopenmp"
+    export CFLAGS="$CFLAGS -I/usr/local/opt/libomp/include"
+    export CXXFLAGS="$CXXFLAGS -I/usr/local/opt/libomp/include"
+    export LDFLAGS="$LDFLAGS -Wl,-rpath,/usr/local/opt/libomp/lib -L/usr/local/opt/libomp/lib -lomp"
+    export AR=/usr/bin/ar
     source "$HOME/.bash_profile"
 fi
 
