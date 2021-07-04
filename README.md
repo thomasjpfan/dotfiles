@@ -14,6 +14,8 @@ ln -s -f ~/dotfiles/tmux/tmux.conf.local ~/.tmux.conf.local
 
 ## Oh My ZSH
 
+0. Install fzf
+
 1. Install zsh
 
 2. Install oh-my-zsh
