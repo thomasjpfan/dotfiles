@@ -48,6 +48,7 @@ export LC_ALL=en_US.UTF-8
 export LANG=en_US.UTF-8
 export LANGUAGE=en_US.UTF-8
 export PATH=$HOME/miniconda3/bin:$PATH
+export PATH=$HOME/bin:$PATH
 
 # gpg agent
 export GPG_TTY=$(tty)
@@ -67,8 +68,9 @@ if [[ $OS = "Darwin" ]]; then
     export AR=/usr/bin/ar
     source "$HOME/.bash_profile"
 else
-    # not os
+    # not osx
     export PATH="/usr/local/cuda/bin:$PATH"
+    export CUDA_NVCC_EXECUTABLE="$HOME/bin/cuda/nvcc"
 fi
 
 autoload -U promptinit
@@ -93,5 +95,3 @@ else
 fi
 unset __conda_setup
 # <<< conda initialize <<<
-
-export PATH="$HOME/bin:$PATH"
