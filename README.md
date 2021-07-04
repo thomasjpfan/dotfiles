@@ -80,7 +80,7 @@ ln -sf ~/dotfiles/git/gitignore_global ~/.gitignore_global
 ## direnv
 
 ```bash
-ln -sf ~/dotfiles/direnvrc ~/.direnvrc
+ln -sf ~/dotfiles/direnvrc ~/.config/direnv/direnvrc
 ```
 
 ## OSX only
