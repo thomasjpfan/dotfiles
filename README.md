@@ -68,12 +68,19 @@ nvim +PlugInstall +qall
 ln -sf ~/dotfiles/condarc ~/.condarc
 ```
 
-## OSX only
-
-1. `./configure_osx.bash`
-2. Symlink
+## Git config
 
 ```bash
 ln -sf ~/dotfiles/git/gitconfig ~/.gitconfig
 ln -sf ~/dotfiles/git/gitignore_global ~/.gitignore_global
 ```
+
+## direnv
+
+```bash
+ln -sf ~/dotfiles/direnvrc ~/.direnvrc
+```
+
+## OSX only
+
+1. `./configure_osx.bash`
