@@ -66,6 +66,9 @@ if [[ $OS = "Darwin" ]]; then
     export LDFLAGS="$LDFLAGS -Wl,-rpath,/usr/local/opt/libomp/lib -L/usr/local/opt/libomp/lib -lomp"
     export AR=/usr/bin/ar
     source "$HOME/.bash_profile"
+else
+    # not os
+    export PATH="/usr/local/cuda/bin:$PATH"
 fi
 
 autoload -U promptinit
