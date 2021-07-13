@@ -47,6 +47,7 @@ export LESS="-SRXF"
 export LC_ALL=en_US.UTF-8
 export LANG=en_US.UTF-8
 export LANGUAGE=en_US.UTF-8
+export EDITOR=nvim
 export PATH=$HOME/miniconda3/bin:$PATH
 export PATH=$HOME/bin:$PATH
 
@@ -71,6 +72,8 @@ else
     # not osx
     export PATH="/usr/local/cuda/bin:$PATH"
     export CUDA_NVCC_EXECUTABLE="$HOME/bin/cuda/nvcc"
+    export CUDNN_LIBRARY_PATH=/usr/lib/x86_64-linux-gnu
+    export CUDNN_INCLUDE_PATH=/usr/include
 fi
 
 autoload -U promptinit
