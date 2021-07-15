@@ -39,3 +39,5 @@ Thumbs.db
 .coverage*
 htmlcov
 .envrc
+
+tjpf_script_*.py
