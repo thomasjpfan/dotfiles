@@ -71,7 +71,9 @@ if [[ $OS = "Darwin" ]]; then
 else
     # not osx
     export PATH="/usr/local/cuda/bin:$PATH"
-    export CUDA_NVCC_EXECUTABLE="$HOME/bin/cuda/nvcc"
+    export CUDA_NVCC_EXECUTABLE=/usr/lib/ccache/nvcc
+    export PATH="/usr/lib/ccache:$PATH"
+    export CUDA_HOME=/usr/local/cuda
     export CUDNN_LIBRARY_PATH=/usr/lib/x86_64-linux-gnu
     export CUDNN_INCLUDE_PATH=/usr/include
 fi
