@@ -75,7 +75,9 @@ else
     export PATH="/usr/lib/ccache:$PATH"
     export CUDA_HOME=/usr/local/cuda
     export CUDNN_LIBRARY_PATH=/usr/lib/x86_64-linux-gnu
+    export PATH="/home/thomasfan/.local/bin:$PATH"
     export CUDNN_INCLUDE_PATH=/usr/include
+    export CCACHE_BASEDIR=/home/thomasfan/Desktop
 fi
 
 autoload -U promptinit
