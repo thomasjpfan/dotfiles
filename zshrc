@@ -11,6 +11,9 @@ type nvim >/dev/null &&
 type bat >/dev/null &&
     alias cat='bat'
 
+type batcat >/dev/null &&
+    alias cat='batcat'
+
 export ZSH=$HOME/.oh-my-zsh
 fpath=("$HOME/.zfunctions" $fpath)
 
