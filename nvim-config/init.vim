@@ -18,7 +18,7 @@ call plug#end()
 
 " Custom
 " Disable Nvim chaning cursor shape
-set guicursor=
+" set guicursor=
 
 " Disable noex mode
 nnoremap Q <nop>
