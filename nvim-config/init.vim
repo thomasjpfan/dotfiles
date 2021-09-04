@@ -16,10 +16,6 @@ Plug 'tpope/vim-surround'
 
 call plug#end()
 
-" Custom
-" Disable Nvim chaning cursor shape
-" set guicursor=
-
 " Disable noex mode
 nnoremap Q <nop>
 
@@ -107,7 +103,6 @@ map <leader>bd :Bclose<cr>:tabclose<cr>gT
 
 " Close all the buffers
 map <leader>ba :bufdo bd<cr>
-
 map <leader>l :bnext<cr>
 map <leader>h :bprevious<cr>
 
@@ -164,10 +159,6 @@ map <leader>nf :NERDTreeFind<cr>
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " => lightline
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
-let g:lightline = {
-      \ 'colorscheme': 'wombat',
-      \ }
-
 let g:lightline = {
       \ 'colorscheme': 'wombat',
       \ 'active': {
