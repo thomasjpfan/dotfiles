@@ -35,6 +35,7 @@ brew install --cask moom
 brew install --cask finicky
 brew install --cask firefox
 brew install --cask dash
+brew install --cask discord
 ```
 
 ## Mac App store
