@@ -10,10 +10,6 @@ git clone https://github.com/thomasjpfan/osx_dotfiles
 sh -c "$(curl -fsSL https://raw.github.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
 ```
 
-```bash
-ln -sf ~/osx_dotfiles/zshrc ~/.zshrc
-```
-
 ## Brew
 
 ```bash
@@ -59,31 +55,23 @@ brew install font-fira-code
 brew install font-fira-code-nerd-font
 ```
 
-## Install better tmux config
-
-```bash
-ln -s -f ~/osx_dotfiles/tmux.conf ~/.tmux.conf
-```
-
-
 ## Install conda
 
 Follow instructions at: https://github.com/conda-forge/miniforge#mambaforge
 
+# Link
+
 ```bash
+ln -s -f ~/osx_dotfiles/tmux.conf ~/.tmux.conf
+ln -sf ~/osx_dotfiles/zshrc ~/.zshrc
 ln -sf ~/osx_dotfiles/condarc ~/.condarc
+ln -s -f ~/osx_dotfiles/gitconfig .gitconfig
+ln -sf ~/osx_dotfiles/gitignore_global ~/.gitignore_global
 ```
+
 
 ## OSX setup
 
 ```bash
 sh osx_setup.sh
 ```
-
-# git
-
-```bash
-ln -s -f ~/osx_dotfiles/gitconfig .gitconfig
-ln -sf ~/osx_dotfiles/gitignore_global ~/.gitignore_global
-```
-
