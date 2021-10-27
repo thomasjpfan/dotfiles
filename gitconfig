@@ -1,0 +1,33 @@
+[core]
+	excludesfile = ~/.gitignore_global
+[user]
+	name = Thomas J. Fan
+	email = thomasjpfan@gmail.com
+    signingkey = 06B0BD8483457A4E4FF81CAEC6568940AC51A821
+[commit]
+	gpgsign = true
+[delta]
+    navigate = true
+    line-numbers = true
+[fetch]
+	parallel = 0
+[init]
+	defaultBranch = main
+[color]
+    ui = true
+[branch]
+    autosetuprebase = always
+    autoSetupMerge = false
+[diff]
+	tool = Kaleidoscope
+[difftool "Kaleidoscope"]
+	cmd = ksdiff --partial-changeset --relative-path \"$MERGED\" -- \"$LOCAL\" \"$REMOTE\"
+[difftool]
+	prompt = false
+[merge]
+	tool = Kaleidoscope
+[mergetool "Kaleidoscope"]
+	cmd = ksdiff --merge --output \"$MERGED\" --base \"$BASE\" -- \"$LOCAL\" --snapshot \"$REMOTE\" --snapshot
+	trustExitCode = true
+[mergetool]
+	prompt = false
