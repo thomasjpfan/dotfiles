@@ -1,23 +1,6 @@
 # Dotfiles
 
-## Tmux
-
-1. Install tmux
-
-2. Install settings
-
-```bash
-cd
-ln -s -f ~/dotfiles/tmux/tmux.conf ~/.tmux.conf
-ln -s -f ~/dotfiles/tmux/tmux.conf.local ~/.tmux.conf.local
-```
-
-## Oh My ZSH
-
-0. Install fzf
-
-1. Install zsh
-
+1. Install zsh, autojump, tmux and [NeoVim](https://github.com/neovim/neovim/wiki/Installing-Neovim)
 2. Install oh-my-zsh
 
 ```bash
@@ -30,7 +13,7 @@ sh -c "$(curl -fsSL https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/mas
 ln -sf ~/dotfiles/zshrc ~/.zshrc
 ```
 
-4. Install spaceship
+5. Install spaceship
 
 ```bash
 git submodule init
@@ -39,50 +22,23 @@ mkdir ~/.zfunctions
 ln -sf ~/dotfiles/spaceship-prompt/spaceship.zsh ~/.zfunctions/prompt_spaceship_setup
 ```
 
-## NeoVim
+6. Follow instructions at: https://github.com/conda-forge/miniforge#mambaforge
 
-1. Install [NeoVim](https://github.com/neovim/neovim/wiki/Installing-Neovim)
-
-2. Install [vim-plug](https://github.com/junegunn/vim-plug)
+7. Link files
 
 ```bash
-curl -fLo ~/.local/share/nvim/site/autoload/plug.vim --create-dirs \
-    https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim
+mkdir -p ~/.config/nvim
+
+ln -s -f ~/dotfiles/tmux.conf ~/.tmux.conf
+ln -sf ~/dotfiles/nvim-config.vim ~/.config/nvim/init.vim
+ln -sf ~/dotfiles/condarc ~/.condarc
+ln -sf ~/dotfiles/git/gitconfig ~/.gitconfig
+ln -sf ~/dotfiles/git/gitignore_global ~/.gitignore_global
+ln -sf ~/dotfiles/direnvrc ~/.direnvrc
 ```
 
-3. Install init.vim
-
-```bash
-ln -s -f ~/dotfiles/nvim-config/init.vim ~/.config/nvim/init.vim
-```
-
-4. Install plugins
+4. Install neovim plugins
 
 ```bash
 nvim +PlugInstall +qall
 ```
-
-## Conda config
-
-1. Install
-
-```bash
-ln -sf ~/dotfiles/condarc ~/.condarc
-```
-
-## Git config
-
-```bash
-ln -sf ~/dotfiles/git/gitconfig ~/.gitconfig
-ln -sf ~/dotfiles/git/gitignore_global ~/.gitignore_global
-```
-
-## direnv
-
-```bash
-ln -sf ~/dotfiles/direnvrc ~/.config/direnv/direnvrc
-```
-
-## OSX only
-
-1. `./configure_osx.bash`

@@ -9,25 +9,9 @@
     signingkey = C6568940AC51A821
 [push]
     default = simple
-[difftool "Kaleidoscope"]
-    cmd = ksdiff --partial-changeset --relative-path \"$MERGED\" -- \"$LOCAL\" \"$REMOTE\"
-[diff]
-    tool = Kaleidoscope
-[difftool]
-	prompt = false
-[mergetool "Kaleidoscope"]
-    cmd = ksdiff --merge --output \"$MERGED\" --base \"$BASE\" -- \"$LOCAL\" --snapshot \"$REMOTE\" --snapshot
-    trustExitCode = true
-[mergetool]
-	prompt = false
-    keepBackup = false
-[merge]
-    tool = Kaleidoscope
 [alias]
     slog = log --oneline --topo-order --graph
     ds = difftool --staged      # git ds - diff your staged changes == review before committing.
-
-	helper = osxkeychain
 [branch]
     autosetuprebase = always
     autoSetupMerge = false

@@ -1,9 +1,3 @@
-# rust
-[[ -d "$HOME/.cargo/bin" ]] &&
-    export PATH=$HOME/.cargo/bin:$PATH
-[[ -e "$HOME/.cargo/env" ]] &&
-    source $HOME/.cargo/env
-
 type nvim >/dev/null &&
     alias vi=nvim &&
     alias vim=nvim
@@ -29,11 +23,9 @@ SPACESHIP_EMBER_SHOW=false
 SPACESHIP_KUBECONTEXT_SHOW=false
 SPACESHIP_DOCKER_SHOW=false
 
-# Tell homebrew to not autoupdate every single time I run it (just once a week).
-export HOMEBREW_AUTO_UPDATE_SECS=604800
 setopt NO_NOMATCH
 
-plugins=(tmux z extract gpg-agent fzf zsh-syntax-highlighting
+plugins=(tmux extract gpg-agent zsh-syntax-highlighting
     zsh-autosuggestions)
 
 zstyle ':bracketed-paste-magic' active-widgets '.self-*'
