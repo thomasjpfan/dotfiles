@@ -68,13 +68,15 @@ sh Mambaforge-MacOSX-arm64.sh
 # Link
 
 ```bash
-ln -s -f ~/osx_dotfiles/tmux.conf ~/.tmux.conf
+ln -sf ~/osx_dotfiles/tmux.conf ~/.tmux.conf
 ln -sf ~/osx_dotfiles/zshrc ~/.zshrc
 ln -sf ~/osx_dotfiles/condarc ~/.condarc
-ln -s -f ~/osx_dotfiles/gitconfig .gitconfig
+ln -sf ~/osx_dotfiles/gitconfig .gitconfig
 ln -sf ~/osx_dotfiles/gitignore_global ~/.gitignore_global
-```
 
+mkdir -p ~/.config/nvim
+ln -sf ~/osx_dotfiles/nvim-config.vim ~/.config/nvim/init.vim
+```
 
 ## OSX setup
 

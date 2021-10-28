@@ -1,0 +1,9 @@
+{
+    "CondaKernelSpecManager": {
+        "name_format": "{environment} ({kernel})"
+    },
+    "ServerApp": {
+        "token": "",
+        "password": ""
+    }
+}
