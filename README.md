@@ -1,5 +1,9 @@
 # Dotfiles
 
+```bash
+git clone https://github.com/thomasjpfan/dotfiles --recurse-submodules
+```
+
 1. Install zsh, autojump, tmux and [NeoVim](https://github.com/neovim/neovim/wiki/Installing-Neovim)
 2. Install oh-my-zsh
 
@@ -16,8 +20,6 @@ ln -sf ~/dotfiles/zshrc ~/.zshrc
 5. Install spaceship
 
 ```bash
-git submodule init
-git submodule update
 mkdir ~/.zfunctions
 ln -sf ~/dotfiles/spaceship-prompt/spaceship.zsh ~/.zfunctions/prompt_spaceship_setup
 ```
