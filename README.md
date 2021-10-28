@@ -19,6 +19,7 @@ brew install tmux
 brew install tmuxinator
 brew install neovim
 brew install wakeonlan
+brew install gh
 ```
 
 ## Apps

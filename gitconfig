@@ -1,23 +1,39 @@
 [core]
 	excludesfile = ~/.gitignore_global
+    autocrlf = input
+    editor = nvim
 [user]
 	name = Thomas J. Fan
 	email = thomasjpfan@gmail.com
     signingkey = 06B0BD8483457A4E4FF81CAEC6568940AC51A821
+[push]
+    default = simple
+[alias]
+    slog = log --oneline --topo-order --graph
+    ds = difftool --staged      # git ds - diff your staged changes == review before committing.
+[branch]
+    autosetuprebase = always
+    autoSetupMerge = false
+[pull]
+    rebase = true
+[color]
+    ui = true
 [commit]
 	gpgsign = true
-[delta]
-    navigate = true
-    line-numbers = true
 [fetch]
 	parallel = 0
 [init]
 	defaultBranch = main
-[color]
-    ui = true
-[branch]
-    autosetuprebase = always
-    autoSetupMerge = false
+[pager]
+    diff = delta
+    log = delta
+    reflog = delta
+    show = delta
+[delta]
+    navigate = true
+    line-numbers = true
+[interactive]
+    diffFilter = delta --color-only --features=interactive
 [diff]
 	tool = Kaleidoscope
 [difftool "Kaleidoscope"]
