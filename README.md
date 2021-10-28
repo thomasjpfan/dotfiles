@@ -4,7 +4,7 @@
 git clone https://github.com/thomasjpfan/dotfiles --recurse-submodules
 ```
 
-1. Install zsh, autojump, tmux and [NeoVim](https://github.com/neovim/neovim/wiki/Installing-Neovim)
+1. Install zsh, autojump, direnv, tmux and [NeoVim](https://github.com/neovim/neovim/wiki/Installing-Neovim)
 2. Install oh-my-zsh
 
 ```bash
