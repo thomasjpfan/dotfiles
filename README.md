@@ -65,7 +65,7 @@ curl -L -O https://github.com/conda-forge/miniforge/releases/latest/download/Mam
 sh Mambaforge-MacOSX-arm64.sh
 ```
 
-# Link
+## Link
 
 ```bash
 ln -sf ~/osx_dotfiles/tmux.conf ~/.tmux.conf
@@ -73,9 +73,16 @@ ln -sf ~/osx_dotfiles/zshrc ~/.zshrc
 ln -sf ~/osx_dotfiles/condarc ~/.condarc
 ln -sf ~/osx_dotfiles/gitconfig .gitconfig
 ln -sf ~/osx_dotfiles/gitignore_global ~/.gitignore_global
+ln -sf ~/osx_dotfiles/direnvrc ~/.direnvrc
 
 mkdir -p ~/.config/nvim
 ln -sf ~/osx_dotfiles/nvim-config.vim ~/.config/nvim/init.vim
+```
+
+## Install vim plugins
+
+```bash
+nvim +PlugInstall +qall
 ```
 
 ## OSX setup
