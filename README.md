@@ -1,7 +1,7 @@
 # Check list for new Mac
 
 ```bash
-git clone https://github.com/thomasjpfan/osx_dotfiles
+git clone https://github.com/thomasjpfan/osx_dotfiles --recurse-submodules
 ```
 
 ## ZSH
@@ -59,6 +59,11 @@ brew install font-fira-code-nerd-font
 ## Install conda
 
 Follow instructions at: https://github.com/conda-forge/miniforge#mambaforge
+
+```bash
+curl -L -O https://github.com/conda-forge/miniforge/releases/latest/download/Mambaforge-MacOSX-arm64.sh
+sh Mambaforge-MacOSX-arm64.sh
+```
 
 # Link
 
