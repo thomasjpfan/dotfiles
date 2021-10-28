@@ -71,7 +71,7 @@ ZSH_CUSTOM=$HOME/osx_dotfiles/zsh_custom
 # Custom plugins may be added to $ZSH_CUSTOM/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
-plugins=(git brew zsh-syntax-highlighting zsh-autosuggestions tmux extract)
+plugins=(git brew zsh-autosuggestions tmux extract)
 
 source $ZSH/oh-my-zsh.sh
 
