@@ -20,6 +20,7 @@ brew install tmuxinator
 brew install neovim
 brew install wakeonlan
 brew install gh
+brew install git-delta
 ```
 
 ## Apps
