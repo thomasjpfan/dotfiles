@@ -4,6 +4,10 @@ module.exports = {
     defaultBrowser: "Safari",
     handlers: [
       {
+        match: /^https?:\/\/github\.com\/.*$/,
+        browser: "Safari"
+      },
+      {
         // Open any link clicked in Slack in Safari
         match: ({ opener }) =>
           opener.bundleId === "com.tinyspeck.slackmacgap",
