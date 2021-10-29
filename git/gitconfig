@@ -31,11 +31,6 @@
 	defaultBranch = main
 [credential]
 	helper = store
-[pager]
-    diff = delta
-    log = delta
-    reflog = delta
-    show = delta
 
 [delta]
     navigate = true

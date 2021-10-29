@@ -24,7 +24,12 @@ mkdir ~/.zfunctions
 ln -sf ~/dotfiles/spaceship-prompt/spaceship.zsh ~/.zfunctions/prompt_spaceship_setup
 ```
 
-6. Follow instructions at: https://github.com/conda-forge/miniforge#mambaforge
+6. Install mambaforge
+
+```bash
+curl -L -O https://github.com/conda-forge/miniforge/releases/latest/download/Mambaforge-Linux-x86_64.sh
+sh Mambaforge-Linux-x86_64.sh
+```
 
 7. Link files
 
