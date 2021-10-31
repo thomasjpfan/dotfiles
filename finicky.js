@@ -24,5 +24,9 @@ module.exports = {
         match: () => finicky.getKeys().option,
         browser: "Safari"
       }
-    ]
+    ],
+    options: {
+      // Hide the finicky icon from the top bar. Default: false
+      hideIcon: true,
+    }
   }

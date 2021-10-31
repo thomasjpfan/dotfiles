@@ -21,6 +21,7 @@ brew install neovim
 brew install wakeonlan
 brew install gh
 brew install git-delta
+brew install pre-commit
 ```
 
 ## Apps
@@ -38,6 +39,7 @@ brew install --cask finicky
 brew install --cask firefox
 brew install --cask dash
 brew install --cask discord
+brew install --cask zoom
 ```
 
 ## Mac App store
