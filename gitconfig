@@ -47,3 +47,5 @@
 	trustExitCode = true
 [mergetool]
 	prompt = false
+[sequence]
+	editor = interactive-rebase-tool

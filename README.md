@@ -26,6 +26,7 @@ brew install wget
 brew install htop
 brew install gnu-time
 brew install tree
+brew install git-interactive-rebase-tool
 ```
 
 ## Apps
