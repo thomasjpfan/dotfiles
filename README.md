@@ -22,6 +22,10 @@ brew install wakeonlan
 brew install gh
 brew install git-delta
 brew install pre-commit
+brew install wget
+brew install htop
+brew install gnu-time
+brew install tree
 ```
 
 ## Apps
