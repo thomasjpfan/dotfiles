@@ -103,6 +103,7 @@ source $ZSH/oh-my-zsh.sh
 
 # Tell homebrew to not autoupdate every single time I run it (just once a week).
 export HOMEBREW_AUTO_UPDATE_SECS=604800
+export HOMEBREW_NO_AUTO_UPDATE=1
 export PATH="/opt/homebrew/opt/gnu-time/libexec/gnubin:$PATH"
 export PATH="/Users/thomasfan/.local/bin:$PATH"
 export PATH="$PATH:/Users/thomasfan/mambaforge/condabin"
