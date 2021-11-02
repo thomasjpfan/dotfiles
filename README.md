@@ -45,6 +45,8 @@ brew install --cask firefox
 brew install --cask dash
 brew install --cask discord
 brew install --cask zoom
+brew install --cask iina
+brew install --cask obsidian
 ```
 
 ## Mac App store
@@ -56,6 +58,7 @@ brew install --cask zoom
 - Wireguard
 - Refined GitHub
 - LanScan
+- DaisyDisk
 
 ## Fonts
 
