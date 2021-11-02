@@ -59,6 +59,7 @@ brew install --cask obsidian
 - Refined GitHub
 - LanScan
 - DaisyDisk
+- Pixelmator Pro
 
 ## Fonts
 
