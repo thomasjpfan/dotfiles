@@ -37,7 +37,7 @@ sh Mambaforge-Linux-x86_64.sh
 mkdir -p ~/.config/nvim
 
 ln -s -f ~/dotfiles/tmux.conf ~/.tmux.conf
-ln -sf ~/dotfiles/nvim-config.vim ~/.config/nvim/init.vim
+ln -sf ~/dotfiles/nvim-config.init ~/.config/nvim/init.vim
 ln -sf ~/dotfiles/condarc ~/.condarc
 ln -sf ~/dotfiles/git/gitconfig ~/.gitconfig
 ln -sf ~/dotfiles/git/gitignore_global ~/.gitignore_global
