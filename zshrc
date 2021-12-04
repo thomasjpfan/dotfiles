@@ -71,7 +71,7 @@ ZSH_CUSTOM=$HOME/osx_dotfiles/zsh_custom
 # Custom plugins may be added to $ZSH_CUSTOM/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
-plugins=(git brew zsh-autosuggestions tmux extract web-search)
+plugins=(git brew zsh-autosuggestions tmux extract web-search copydir)
 
 source $ZSH/oh-my-zsh.sh
 
@@ -112,6 +112,7 @@ alias cythonX="cython -X language_level=3 -X boundscheck=False -X wraparound=Fal
 eval "$(starship init zsh)"
 [ -f /opt/homebrew/etc/profile.d/autojump.sh ] && . /opt/homebrew/etc/profile.d/autojump.sh
 [ -x "$(command -v direnv)" ] && eval "$(direnv hook zsh)"
+. "$HOME/.cargo/env"
 
 type nvim >/dev/null &&
     alias vi=nvim &&

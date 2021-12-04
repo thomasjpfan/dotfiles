@@ -34,7 +34,16 @@
                                             "right_command",
                                             "right_control",
                                             "right_option"
-                                        ]
+                                        ],
+                                        "lazy": true
+                                    }
+                                ],
+                                "to_after_key_up": [
+                                    {
+                                        "set_variable": {
+                                            "name": "hyper_modifier",
+                                            "value": 0
+                                        }
                                     }
                                 ],
                                 "to_if_alone": [
@@ -741,10 +750,10 @@
                                     "key_code": "period",
                                     "modifiers": {
                                         "mandatory": [
-                                            "right_command",
-                                            "right_control",
-                                            "right_shift",
-                                            "right_option"
+                                            "command",
+                                            "control",
+                                            "shift",
+                                            "option"
                                         ]
                                     }
                                 },
@@ -756,10 +765,10 @@
                                     "key_code": "comma",
                                     "modifiers": {
                                         "mandatory": [
-                                            "right_command",
-                                            "right_control",
-                                            "right_shift",
-                                            "right_option"
+                                            "command",
+                                            "control",
+                                            "shift",
+                                            "option"
                                         ]
                                     }
                                 },

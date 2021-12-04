@@ -40,4 +40,4 @@ Thumbs.db
 htmlcov
 .envrc
 
-tf_scripts
+tjpf_*.py
