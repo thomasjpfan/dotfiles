@@ -5,7 +5,7 @@ module.exports = {
     handlers: [
       {
         match: /^https?:\/\/github\.com\/.*$/,
-        browser: "Safari"
+        browser: "Firefox"
       },
       {
         // Open any link clicked in Slack in Safari

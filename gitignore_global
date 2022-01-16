@@ -39,5 +39,6 @@ Thumbs.db
 .coverage*
 htmlcov
 .envrc
+*__pycache__*
 
-tjpf_*.py
+tjpf_*

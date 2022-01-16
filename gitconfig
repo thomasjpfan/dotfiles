@@ -49,3 +49,5 @@
 	prompt = false
 [sequence]
 	editor = interactive-rebase-tool
+[blame]
+	ignoreRevsFile = .git-blame-ignore-revs
