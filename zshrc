@@ -71,7 +71,7 @@ ZSH_CUSTOM=$HOME/osx_dotfiles/zsh_custom
 # Custom plugins may be added to $ZSH_CUSTOM/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
-plugins=(git brew zsh-autosuggestions tmux extract web-search copydir)
+plugins=(git brew zsh-autosuggestions tmux extract web-search)
 
 source $ZSH/oh-my-zsh.sh
 
@@ -107,6 +107,7 @@ export HOMEBREW_NO_AUTO_UPDATE=1
 export PATH="/opt/homebrew/opt/gnu-time/libexec/gnubin:$PATH"
 export PATH="/Users/thomasfan/.local/bin:$PATH"
 export PATH="$PATH:/Users/thomasfan/mambaforge/condabin"
+export XDG_CONFIG_HOME=$HOME/.config
 alias cythonX="cython -X language_level=3 -X boundscheck=False -X wraparound=False -X initializedcheck=False -X nonecheck=False -X cdivision=True"
 
 eval "$(starship init zsh)"
