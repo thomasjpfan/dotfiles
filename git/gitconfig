@@ -37,3 +37,5 @@
 
 [interactive]
     diffFilter = delta --color-only --features=interactive
+[blame]
+    ignoreRevsFile = .git-blame-ignore-revs

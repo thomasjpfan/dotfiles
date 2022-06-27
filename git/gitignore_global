@@ -40,4 +40,5 @@ Thumbs.db
 htmlcov
 .envrc
 
-tjpf_*.py
+tjpf_*
+bench_*
