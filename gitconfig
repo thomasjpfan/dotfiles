@@ -11,11 +11,10 @@
 [alias]
     slog = log --oneline --topo-order --graph
     ds = difftool --staged      # git ds - diff your staged changes == review before committing.
+    fixup = "!git log -n 50 --pretty=format:'%h %s' --no-merges | fzf | cut -c -7 | xargs -o git commit --fixup"
 [branch]
     autosetuprebase = always
     autoSetupMerge = false
-[pull]
-    rebase = true
 [color]
     ui = true
 [commit]
@@ -34,12 +33,17 @@
     show = delta
 [interactive]
     diffFilter = delta --color-only --features=interactive
+[sequence]
+	editor = interactive-rebase-tool
+[pull]
+    ff = only
 [diff]
 	tool = Kaleidoscope
 [difftool "Kaleidoscope"]
 	cmd = ksdiff --partial-changeset --relative-path \"$MERGED\" -- \"$LOCAL\" \"$REMOTE\"
 [difftool]
 	prompt = false
+	trustExitCode = true
 [merge]
 	tool = Kaleidoscope
 [mergetool "Kaleidoscope"]
@@ -47,7 +51,3 @@
 	trustExitCode = true
 [mergetool]
 	prompt = false
-[sequence]
-	editor = interactive-rebase-tool
-[blame]
-	ignoreRevsFile = .git-blame-ignore-revs
