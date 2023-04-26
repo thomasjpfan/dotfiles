@@ -6,7 +6,7 @@
     "ServerApp": {
         "token": "",
         "password": "",
-        "browser": "Firefox"
+        "browser": "open -a 'Brave Browser' %s"
     },
     "InteractiveShell": {
         "editing_mode": "vi"
