@@ -42,3 +42,4 @@ htmlcov
 
 tjpf_*
 bench_*
+plot_bench_*
