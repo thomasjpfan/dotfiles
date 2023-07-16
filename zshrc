@@ -147,5 +147,7 @@ test -e "${HOME}/.iterm2_shell_integration.zsh" && source "${HOME}/.iterm2_shell
 
 export PATH="$PATH:/Users/thomasfan/Desktop/git-tools"
 
-export MAMBA_ROOT_PREFIX=$HOME/micromamba
-eval "$(micromamba shell hook --shell zsh)"
+#export MAMBA_ROOT_PREFIX=$HOME/micromamba
+#eval "$(micromamba shell hook --shell zsh)"
+#alias mm=micromamba
+alias m=mamba
