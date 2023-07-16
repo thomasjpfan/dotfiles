@@ -2,6 +2,7 @@ ssl_verify: true
 changeps1: false
 channels:
   - conda-forge
+  - nodefaults
 show_channel_urls: true
 channel_priority: strict
 repodata_use_zst: true

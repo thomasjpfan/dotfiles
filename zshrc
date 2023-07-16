@@ -105,9 +105,10 @@ source $ZSH/oh-my-zsh.sh
 export HOMEBREW_AUTO_UPDATE_SECS=604800
 export HOMEBREW_NO_AUTO_UPDATE=1
 export PATH="/opt/homebrew/opt/gnu-time/libexec/gnubin:$PATH"
-export PATH="/Users/thomasfan/.local/bin:$PATH"
-export PATH="$PATH:/Users/thomasfan/mambaforge/condabin"
+export PATH="$HOME/.local/bin:$PATH"
+export PATH="$PATH:$HOME/mambaforge/condabin"
 export XDG_CONFIG_HOME=$HOME/.config
+alias mux=tmuxinator
 alias cythonX="cython -X language_level=3 -X boundscheck=False -X wraparound=False -X initializedcheck=False -X nonecheck=False -X cdivision=True"
 
 eval "$(starship init zsh)"
@@ -123,7 +124,7 @@ export EDITOR=nvim
 
 # >>> conda initialize >>>
 # !! Contents within this block are managed by 'conda init' !!
-__conda_setup="$('/Users/thomasfan/mambaforge/bin/conda' 'shell.zsh' 'hook' 2> /dev/null)"
+__conda_setup="$('/Users/thomasfan/mambaforge/bin/conda' 'shell.zsh' 'hook' 2>/dev/null)"
 if [ $? -eq 0 ]; then
     eval "$__conda_setup"
 else
@@ -140,10 +141,11 @@ if [ -f "/Users/thomasfan/mambaforge/etc/profile.d/mamba.sh" ]; then
 fi
 # <<< conda initialize <<<
 
-
 test -e "${HOME}/.iterm2_shell_integration.zsh" && source "${HOME}/.iterm2_shell_integration.zsh"
-
 
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
 
 export PATH="$PATH:/Users/thomasfan/Desktop/git-tools"
+
+export MAMBA_ROOT_PREFIX=$HOME/micromamba
+eval "$(micromamba shell hook --shell zsh)"
