@@ -102,3 +102,4 @@ unset __conda_setup
 # <<< conda initialize <<<
 
 alias cythonX="cython -X language_level=3 -X boundscheck=False -X wraparound=False -X initializedcheck=False -X nonecheck=False -X cdivision=True"
+alias mux=tmuxinator
