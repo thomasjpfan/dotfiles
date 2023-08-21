@@ -39,6 +39,7 @@ mkdir .config
 mkdir .jupyter
 ln -sf ~/osx_dotfiles/karabiner.json  ~/.config/karabiner/karabiner.json
 ln -sf ~/osx_dotfiles/jupyter_config.json ~/.jupyter/jupyter_config.json
+ln -sf ~/osx_dotfiles/starship.toml ~/.config/starship.toml
 
 mkdir -p ~/.config/nvim
 ln -sf ~/osx_dotfiles/nvim-config.vim ~/.config/nvim/init.vim
