@@ -6,3 +6,4 @@ channels:
 show_channel_urls: true
 channel_priority: strict
 repodata_use_zst: true
+auto_activate_base: false
