@@ -36,6 +36,7 @@ ln -sf ~/osx_dotfiles/condarc ~/.condarc
 mkdir -p ~/.config/git
 ln -sf ~/osx_dotfiles/gitconfig.ini ~/.config/git/config
 ln -sf ~/osx_dotfiles/gitignore_global ~/.config/git/ignore
+ln -sf ~/osx_dotfiles/gitattributes ~/.config/git/attributes
 ln -sf ~/osx_dotfiles/ripgreprc ~/.config/ripgreprc
 
 ln -sf ~/osx_dotfiles/bin ~/bin

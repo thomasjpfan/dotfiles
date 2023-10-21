@@ -161,5 +161,6 @@ export LESS='--chop-long-lines --HILITE-UNREAD --ignore-case --incsearch --jump-
 export RIPGREP_CONFIG_PATH=~/.config/ripgreprc
 
 alias p=less
+alias gswr='git switch-recent'
 
 function rg { command rg --json $@ | delta; }
