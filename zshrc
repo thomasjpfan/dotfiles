@@ -157,3 +157,9 @@ export PATH="$PATH:$HOME/bin"
 export PATH="$PATH:$HOME/bin_local"
 export MODULAR_HOME="/Users/thomasfan/.modular"
 export PATH="/Users/thomasfan/.modular/pkg/packages.modular.com_mojo/bin:$PATH"
+export LESS='--chop-long-lines --HILITE-UNREAD --ignore-case --incsearch --jump-target=4 --LONG-PROMPT --no-init --quit-if-one-screen --RAW-CONTROL-CHARS --use-color --window=-4'
+export RIPGREP_CONFIG_PATH=~/.config/ripgreprc
+
+alias p=less
+
+function rg { command rg --json $@ | delta; }
