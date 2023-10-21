@@ -1,0 +1,21 @@
+#!/usr/bin/env python3
+from pathlib import Path
+
+git_folder = Path(".git")
+
+assert git_folder.exists(), "Must be in a git directory"
+
+SCRIPT = '''#!/bin/sh
+SIGNATURE="Signed-off-by: `git config --global --get user.name` <`git config --global --get user.email`>"
+grep -qs "^${SIGNATURE}" "$1" || echo "\n${SIGNATURE}" >> "$1"'''
+
+hooks_dir = git_folder / "hooks"
+hooks_dir.mkdir(exist_ok=True)
+
+commit_msg_path = hooks_dir / "commit-msg"
+with commit_msg_path.open("w") as f:
+    f.write(SCRIPT)
+
+commit_msg_path.chmod(0o755)
+
+print(f"Created hook in {commit_msg_path}")

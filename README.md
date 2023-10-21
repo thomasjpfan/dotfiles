@@ -32,8 +32,12 @@ sh Mambaforge-MacOSX-arm64.sh
 ln -sf ~/osx_dotfiles/tmux.conf ~/.tmux.conf
 ln -sf ~/osx_dotfiles/zshrc ~/.zshrc
 ln -sf ~/osx_dotfiles/condarc ~/.condarc
-ln -sf ~/osx_dotfiles/gitconfig .gitconfig
-ln -sf ~/osx_dotfiles/gitignore_global ~/.gitignore_global
+
+mkdir -p ~/.config/git
+ln -sf ~/osx_dotfiles/gitconfig ~/.config/git/config
+ln -sf ~/osx_dotfiles/gitignore_global ~/.config/git/ignore
+
+ln -sf ~/osx_dotfiles/bin ~/bin
 ln -sf ~/osx_dotfiles/direnvrc ~/.direnvrc
 mkdir .config
 mkdir .jupyter

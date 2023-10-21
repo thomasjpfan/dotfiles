@@ -153,3 +153,7 @@ command -v pyenv >/dev/null || export PATH="$PYENV_ROOT/bin:$PATH"
 eval "$(pyenv init -)"
 
 export PATH="$PATH:$HOME/google-cloud-sdk/bin"
+export PATH="$PATH:$HOME/bin"
+export PATH="$PATH:$HOME/bin_local"
+export MODULAR_HOME="/Users/thomasfan/.modular"
+export PATH="/Users/thomasfan/.modular/pkg/packages.modular.com_mojo/bin:$PATH"
