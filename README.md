@@ -41,8 +41,8 @@ ln -sf ~/osx_dotfiles/ripgreprc ~/.config/ripgreprc
 
 ln -sf ~/osx_dotfiles/bin ~/bin
 ln -sf ~/osx_dotfiles/direnvrc ~/.direnvrc
-mkdir .config
-mkdir .jupyter
+mkdir -p ~/.config/karabiner
+mkdir -p ~/.jupyter
 ln -sf ~/osx_dotfiles/karabiner.json  ~/.config/karabiner/karabiner.json
 ln -sf ~/osx_dotfiles/jupyter_config.json ~/.jupyter/jupyter_config.json
 ln -sf ~/osx_dotfiles/starship.toml ~/.config/starship.toml
