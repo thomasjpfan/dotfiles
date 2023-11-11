@@ -2,6 +2,6 @@ ssl_verify: true
 changeps1: false
 channels:
   - conda-forge
-auto_activate_base: true
+auto_activate_base: false
 show_channel_urls: true
 channel_priority: strict
