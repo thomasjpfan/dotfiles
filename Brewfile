@@ -18,8 +18,6 @@ brew "gnu-sed"
 brew "gnu-time"
 brew "go"
 brew "htop"
-brew "jq"
-brew "mas"
 brew "neovim"
 brew "pipx"
 brew "pre-commit"
@@ -29,6 +27,8 @@ brew "tmuxinator"
 brew "tree"
 brew "wakeonlan"
 brew "wget"
+brew "mas"
+brew "ripgrep"
 cask "appcleaner"
 cask "betterdisplay"
 cask "bettertouchtool"
@@ -45,35 +45,30 @@ cask "moom"
 cask "slack"
 cask "visual-studio-code"
 cask "alfred"
-# cask "gpg-suite"
-# cask "1password"
-# cask "brave-browser"
-# cask "carbon-copy-cloner"
-# cask "discord"
-# cask "drawio"
-# cask "firefox"
-# cask "obsidian"
-# cask "podman-desktop"
-# cask "screenflow"
-# cask "mactex"
-# cask "vivaldi"
-# cask "zoom"
+cask "brave-browser"
+cask "gpg-suite"
+cask "1password"
+cask "discord"
+cask "obsidian"
+cask "screenflow"
+cask "zoom"
+cask "karabiner-elements"
+cask "transmit"
+mas "1Password for Safari", id: 1569813296
 mas "AdGuard for Safari", id: 1440147259
 mas "DaisyDisk", id: 411643860
+mas "Deliveries", id: 290986013
+mas "Elmedia Player", id: 937759555
 mas "Flow", id: 1423210932
-# mas "GoodTask", id: 1143437985
-# mas "iMovie", id: 408981434
-# mas "Keynote", id: 409183694
-# mas "LanScan", id: 472226235
-# mas "Compressor", id: 424390742
-# mas "Final Cut Pro", id: 424389933
-# mas "GarageBand", id: 682658836
-# mas "Logic Pro", id: 634148309
-# mas "MainStage", id: 634159523
-# mas "Motion", id: 434290957
-# mas "Numbers", id: 409203825
-# mas "Pages", id: 409201541
-# mas "WireGuard", id: 1451685025
+mas "GIF Brewery 3", id: 1081413713
+mas "GoodTask", id: 1143437985
+mas "Hush", id: 1544743900
+mas "LanScan", id: 472226235
 mas "Pixelmator Pro", id: 1289583905
 mas "Presentify", id: 1507246666
+mas "rcmd", id: 1596283165
 mas "Refined GitHub", id: 1519867270
+mas "SiteSucker", id: 442168834
+mas "Twitter", id: 1482454543
+mas "Velja", id: 1607635845
+mas "WireGuard", id: 1451685025
