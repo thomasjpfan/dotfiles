@@ -30,6 +30,7 @@ brew "wget"
 brew "mas"
 brew "ripgrep"
 brew "pyenv"
+brew "fd"
 cask "appcleaner"
 cask "betterdisplay"
 cask "bettertouchtool"
@@ -61,7 +62,6 @@ mas "DaisyDisk", id: 411643860
 mas "Deliveries", id: 290986013
 mas "Elmedia Player", id: 937759555
 mas "Flow", id: 1423210932
-mas "GIF Brewery 3", id: 1081413713
 mas "GoodTask", id: 1143437985
 mas "Hush", id: 1544743900
 mas "LanScan", id: 472226235
