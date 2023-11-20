@@ -22,8 +22,8 @@ brew bundle install
 Follow instructions at: https://github.com/conda-forge/miniforge#mambaforge
 
 ```bash
-curl -L -O https://github.com/conda-forge/miniforge/releases/latest/download/Mambaforge-MacOSX-arm64.sh
-sh Mambaforge-MacOSX-arm64.sh
+curl -L -O https://github.com/conda-forge/miniforge#install
+bash Miniforge3-$(uname)-$(uname -m).sh
 ```
 
 ## Link
