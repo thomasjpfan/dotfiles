@@ -62,12 +62,3 @@ nvim +PlugInstall +qall
 ```bash
 sh osx_setup.sh
 ```
-
-Add the following to `~/.zprofile` for tmux
-
-```bash
-if [ -f /etc/profile ]; then
-    PATH=""
-    source /etc/profile
-fi
-```
