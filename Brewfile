@@ -57,6 +57,8 @@ cask "screenflow"
 cask "zoom"
 cask "karabiner-elements"
 cask "transmit"
+cask "homebrew/cask/docker"
+cask "motu-m-series"
 mas "1Password for Safari", id: 1569813296
 mas "AdGuard for Safari", id: 1440147259
 mas "DaisyDisk", id: 411643860
