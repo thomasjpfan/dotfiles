@@ -114,7 +114,6 @@ alias cythonX="cython -X language_level=3 -X boundscheck=False -X wraparound=Fal
 eval "$(starship init zsh)"
 [ -f /opt/homebrew/etc/profile.d/autojump.sh ] && . /opt/homebrew/etc/profile.d/autojump.sh
 [ -x "$(command -v direnv)" ] && eval "$(direnv hook zsh)"
-. "$HOME/.cargo/env"
 
 type nvim >/dev/null &&
     alias vi=nvim &&

@@ -1650,6 +1650,12 @@
         "options": {
           "full_name": "motu-m-series"
         }
+      },
+      "steam": {
+        "version": "4.0",
+        "options": {
+          "full_name": "steam"
+        }
       }
     },
     "mas": {
