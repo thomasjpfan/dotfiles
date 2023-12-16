@@ -59,7 +59,6 @@ cask "transmit"
 cask "homebrew/cask/docker"
 cask "motu-m-series"
 cask "steam"
-cask "shortcat"
 cask "crossover"
 mas "1Password for Safari", id: 1569813296
 mas "AdGuard for Safari", id: 1440147259
