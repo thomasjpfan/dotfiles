@@ -55,7 +55,6 @@ Temporary Items
 .apdisk
 
 .vscode
-.pre-commit-config.yaml
 .pytest_cache
 .coverage*
 htmlcov
