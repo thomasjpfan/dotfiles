@@ -128,9 +128,6 @@ test -e "${HOME}/.iterm2_shell_integration.zsh" && source "${HOME}/.iterm2_shell
 export PATH="$PATH:/Users/thomasfan/Desktop/git-tools"
 
 alias m=mamba
-export PYENV_ROOT="$HOME/.pyenv"
-command -v pyenv >/dev/null || export PATH="$PYENV_ROOT/bin:$PATH"
-eval "$(pyenv init -)"
 
 export PATH="$PATH:$HOME/google-cloud-sdk/bin"
 export PATH="$PATH:$HOME/bin"
@@ -142,6 +139,7 @@ export RIPGREP_CONFIG_PATH=~/.config/ripgreprc
 
 alias p=less
 alias gswr='git switch-recent'
+alias py='python -m pdb -c c'
 
 function rg { command rg --json $@ | delta; }
 
@@ -163,4 +161,3 @@ if [ -f "/Users/thomasfan/miniforge3/etc/profile.d/mamba.sh" ]; then
     . "/Users/thomasfan/miniforge3/etc/profile.d/mamba.sh"
 fi
 # <<< conda initialize <<<
-
