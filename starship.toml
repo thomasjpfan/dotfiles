@@ -3,3 +3,138 @@ ignore_base = false
 
 [gcloud]
 disabled = true
+
+[kubernetes]
+disabled = false
+
+[docker_context]
+disabled = true
+
+[bun]
+format = ""
+
+[buf]
+format = ""
+
+[cmake]
+format = ""
+
+[cobol]
+format = ""
+
+[crystal]
+format = ""
+
+[daml]
+format = ""
+
+[dart]
+format = ""
+
+[deno]
+format = ""
+
+[dotnet]
+format = ""
+
+[elixir]
+format = ''
+
+[elm]
+format = ''
+
+[erlang]
+format = ''
+
+[fennel]
+format = ''
+
+[golang]
+format = ''
+
+[gradle]
+format = ''
+
+[haxe]
+format = ''
+
+[helm]
+format = ''
+
+[java]
+format = ''
+
+[julia]
+format = ''
+
+[kotlin]
+format = ''
+
+[lua]
+format = ''
+
+[meson]
+format = ''
+
+[nim]
+format = ''
+
+[nodejs]
+format = ''
+
+[ocaml]
+format = ''
+
+[opa]
+format = ''
+
+[perl]
+format = ''
+
+[php]
+format = ''
+
+[pulumi]
+format = ''
+
+[purescript]
+format = ''
+
+[python]
+format = ''
+
+[quarto]
+format = ''
+
+[raku]
+format = ''
+
+[red]
+format = ''
+
+[rlang]
+format = ''
+
+[ruby]
+format = ''
+
+[rust]
+format = ''
+
+[solidity]
+format = ''
+
+[typst]
+format = ''
+
+[swift]
+format = ''
+
+[vagrant]
+format = ''
+
+[vlang]
+format = ''
+
+[zig]
+format = ''
