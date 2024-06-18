@@ -4,10 +4,10 @@ ignore_base = false
 [gcloud]
 disabled = true
 
-[kubernetes]
-disabled = false
-
 [docker_context]
+disabled = true
+
+[aws]
 disabled = true
 
 [bun]
