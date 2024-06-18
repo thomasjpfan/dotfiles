@@ -145,7 +145,7 @@ function rg { command rg --json $@ | delta; }
 
 # >>> conda initialize >>>
 # !! Contents within this block are managed by 'conda init' !!
-__conda_setup="$('/Users/thomasfan/miniforge3/bin/conda' 'shell.zsh' 'hook' 2> /dev/null)"
+__conda_setup="$('/Users/thomasfan/miniforge3/bin/conda' 'shell.zsh' 'hook' 2>/dev/null)"
 if [ $? -eq 0 ]; then
     eval "$__conda_setup"
 else
@@ -161,3 +161,17 @@ if [ -f "/Users/thomasfan/miniforge3/etc/profile.d/mamba.sh" ]; then
     . "/Users/thomasfan/miniforge3/etc/profile.d/mamba.sh"
 fi
 # <<< conda initialize <<<
+
+HISTFILE="$HOME/.zsh_history"
+
+# Ignore these commands in history
+HISTORY_IGNORE="(ls|pwd|cd)*"
+
+# Write the history file in the ':start:elapsed;command' format.
+setopt EXTENDED_HISTORY
+
+# Do not record an event starting with a space.
+setopt HIST_IGNORE_SPACE
+
+# Don't store history commands
+setopt HIST_NO_STORE
