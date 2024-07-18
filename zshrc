@@ -108,6 +108,15 @@ alias cythonX="cython -X language_level=3 -X boundscheck=False -X wraparound=Fal
 alias mux=tmuxinator
 alias m=mamba
 
-export PYENV_ROOT="$HOME/.pyenv"
-command -v pyenv >/dev/null || export PATH="$PYENV_ROOT/bin:$PATH"
-eval "$(pyenv init -)"
+export PATH="$HOME/.pyenv/bin:$PATH"
+eval "$(pyenv init --path)"
+eval "$(pyenv virtualenv-init -)"
+
+if [ -d "$HOME/go_bin/bin" ] ; then
+    PATH="$HOME/go_bin/bin:$PATH"
+fi
+
+if [ -d "$HOME/go/bin" ] ; then
+    PATH="$HOME/go/bin:$PATH"
+fi
+

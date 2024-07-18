@@ -43,3 +43,4 @@ htmlcov
 tjpf_*
 bench_*
 plot_bench_*
+tjpf_workflows
