@@ -12,6 +12,7 @@ Plug 'itchyny/lightline.vim'
 Plug 'tpope/vim-commentary'
 Plug 'airblade/vim-gitgutter'
 Plug 'tpope/vim-surround'
+Plug 'easymotion/vim-easymotion'
 
 call plug#end()
 
@@ -114,3 +115,11 @@ let g:lightline = {
       \ }
 
 
+" easy-motion
+" Move to line
+map <Leader>l <Plug>(easymotion-bd-jk)
+nmap <Leader>l <Plug>(easymotion-overwin-line)
+
+" Move to word
+map  <Leader>w <Plug>(easymotion-bd-w)
+nmap <Leader>w <Plug>(easymotion-overwin-w)
