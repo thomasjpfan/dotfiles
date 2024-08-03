@@ -175,3 +175,7 @@ setopt HIST_IGNORE_SPACE
 
 # Don't store history commands
 setopt HIST_NO_STORE
+
+alias k=kubectl
+eval "$(mcfly init zsh)"
+
