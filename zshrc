@@ -179,3 +179,5 @@ setopt HIST_NO_STORE
 alias k=kubectl
 eval "$(mcfly init zsh)"
 
+export MCFLY_DISABLE_MENU=TRUE
+export MCFLY_KEY_SCHEME=vim
