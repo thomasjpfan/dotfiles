@@ -71,7 +71,7 @@ ZSH_CUSTOM=$HOME/osx_dotfiles/zsh_custom
 # Custom plugins may be added to $ZSH_CUSTOM/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
-plugins=(git brew zsh-autosuggestions tmux extract web-search)
+plugins=(git brew zsh-autosuggestions tmux extract)
 
 source $ZSH/oh-my-zsh.sh
 
@@ -125,8 +125,6 @@ test -e "${HOME}/.iterm2_shell_integration.zsh" && source "${HOME}/.iterm2_shell
 
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
 
-export PATH="$PATH:/Users/thomasfan/Desktop/git-tools"
-
 alias m=mamba
 
 export PATH="$PATH:$HOME/google-cloud-sdk/bin"
@@ -135,7 +133,7 @@ export PATH="$PATH:$HOME/bin_local"
 export MODULAR_HOME="/Users/thomasfan/.modular"
 export PATH="/Users/thomasfan/.modular/pkg/packages.modular.com_mojo/bin:$PATH"
 export LESS='--chop-long-lines --HILITE-UNREAD --ignore-case --incsearch --jump-target=4 --LONG-PROMPT --no-init --quit-if-one-screen --RAW-CONTROL-CHARS --use-color --window=-4'
-export RIPGREP_CONFIG_PATH=~/.config/ripgreprc
+export RIPGREP_CONFIG_PATH=$HOME/.config/ripgreprc
 
 alias p=less
 alias gswr='git switch-recent'
@@ -181,3 +179,7 @@ eval "$(mcfly init zsh)"
 
 export MCFLY_DISABLE_MENU=TRUE
 export MCFLY_KEY_SCHEME=vim
+
+. "$HOME/.rye/env"
+
+alias ls='lsd'
