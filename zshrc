@@ -114,6 +114,9 @@ alias cythonX="cython -X language_level=3 -X boundscheck=False -X wraparound=Fal
 eval "$(starship init zsh)"
 [ -f /opt/homebrew/etc/profile.d/autojump.sh ] && . /opt/homebrew/etc/profile.d/autojump.sh
 [ -x "$(command -v direnv)" ] && eval "$(direnv hook zsh)"
+[ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
+[ -x "$(command -v mclfy)" ] && eval "$(mcfly init zsh)"
+[ -f ~/.rye/env ] && source $HOME/.rye/env
 
 type nvim >/dev/null &&
     alias vi=nvim &&
@@ -123,10 +126,6 @@ export EDITOR=nvim
 
 test -e "${HOME}/.iterm2_shell_integration.zsh" && source "${HOME}/.iterm2_shell_integration.zsh"
 
-[ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
-
-alias m=mamba
-
 export PATH="$PATH:$HOME/google-cloud-sdk/bin"
 export PATH="$PATH:$HOME/bin"
 export PATH="$PATH:$HOME/bin_local"
@@ -134,10 +133,8 @@ export MODULAR_HOME="/Users/thomasfan/.modular"
 export PATH="/Users/thomasfan/.modular/pkg/packages.modular.com_mojo/bin:$PATH"
 export LESS='--chop-long-lines --HILITE-UNREAD --ignore-case --incsearch --jump-target=4 --LONG-PROMPT --no-init --quit-if-one-screen --RAW-CONTROL-CHARS --use-color --window=-4'
 export RIPGREP_CONFIG_PATH=$HOME/.config/ripgreprc
-
-alias p=less
-alias gswr='git switch-recent'
-alias py='python -m pdb -c c'
+export MCFLY_DISABLE_MENU=TRUE
+export MCFLY_KEY_SCHEME=vim
 
 function rg { command rg --json $@ | delta; }
 
@@ -175,11 +172,9 @@ setopt HIST_IGNORE_SPACE
 setopt HIST_NO_STORE
 
 alias k=kubectl
-eval "$(mcfly init zsh)"
-
-export MCFLY_DISABLE_MENU=TRUE
-export MCFLY_KEY_SCHEME=vim
-
-. "$HOME/.rye/env"
-
 alias ls='lsd'
+alias m=mamba
+alias p=less
+alias gswr='git switch-recent'
+alias py='python -m pdb -c c'
+
