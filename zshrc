@@ -107,9 +107,8 @@ export HOMEBREW_NO_AUTO_UPDATE=1
 export PATH="/opt/homebrew/opt/gnu-time/libexec/gnubin:$PATH"
 export PATH="$HOME/.local/bin:$PATH"
 export PATH="$PATH:$HOME/mambaforge/condabin"
+export PATH=$PATH:/Users/thomasfan/.pixi/bin
 export XDG_CONFIG_HOME=$HOME/.config
-alias mux=tmuxinator
-alias cythonX="cython -X language_level=3 -X boundscheck=False -X wraparound=False -X initializedcheck=False -X nonecheck=False -X cdivision=True"
 
 eval "$(starship init zsh)"
 [ -f /opt/homebrew/etc/profile.d/autojump.sh ] && . /opt/homebrew/etc/profile.d/autojump.sh
@@ -117,6 +116,7 @@ eval "$(starship init zsh)"
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
 [ -x "$(command -v mclfy)" ] && eval "$(mcfly init zsh)"
 [ -f ~/.rye/env ] && source $HOME/.rye/env
+[ -x "$(command -v pixi)" ] && eval "$(pixi completion --shell zsh)"
 
 type nvim >/dev/null &&
     alias vi=nvim &&
@@ -157,6 +157,12 @@ if [ -f "/Users/thomasfan/miniforge3/etc/profile.d/mamba.sh" ]; then
 fi
 # <<< conda initialize <<<
 
+# The next line updates PATH for the Google Cloud SDK.
+if [ -f '/Users/thomasfan/google-cloud-sdk/path.zsh.inc' ]; then . '/Users/thomasfan/google-cloud-sdk/path.zsh.inc'; fi
+
+# The next line enables shell command completion for gcloud.
+if [ -f '/Users/thomasfan/google-cloud-sdk/completion.zsh.inc' ]; then . '/Users/thomasfan/google-cloud-sdk/completion.zsh.inc'; fi
+
 HISTFILE="$HOME/.zsh_history"
 
 # Ignore these commands in history
@@ -172,9 +178,11 @@ setopt HIST_IGNORE_SPACE
 setopt HIST_NO_STORE
 
 alias k=kubectl
+alias kctx=kubectx
 alias ls='lsd'
 alias m=mamba
 alias p=less
 alias gswr='git switch-recent'
 alias py='python -m pdb -c c'
-
+alias mux=tmuxinator
+alias cythonX="cython -X language_level=3 -X boundscheck=False -X wraparound=False -X initializedcheck=False -X nonecheck=False -X cdivision=True"
