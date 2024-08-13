@@ -186,3 +186,4 @@ alias gswr='git switch-recent'
 alias py='python -m pdb -c c'
 alias mux=tmuxinator
 alias cythonX="cython -X language_level=3 -X boundscheck=False -X wraparound=False -X initializedcheck=False -X nonecheck=False -X cdivision=True"
+alias gb="git checkout \$(git for-each-ref --sort=-committerdate --format='%(refname:short)' refs/heads/ | fzf)"
