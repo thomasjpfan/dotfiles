@@ -101,7 +101,7 @@ format = ''
 format = ''
 
 [python]
-format = ''
+format = '[${pyenv_prefix}(\($virtualenv\) )]($style)'
 
 [quarto]
 format = ''
