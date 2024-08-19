@@ -114,7 +114,7 @@ eval "$(starship init zsh)"
 [ -f /opt/homebrew/etc/profile.d/autojump.sh ] && . /opt/homebrew/etc/profile.d/autojump.sh
 [ -x "$(command -v direnv)" ] && eval "$(direnv hook zsh)"
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
-[ -x "$(command -v mclfy)" ] && eval "$(mcfly init zsh)"
+[ -x "$(command -v mcfly)" ] && eval "$(mcfly init zsh)"
 [ -f ~/.rye/env ] && source $HOME/.rye/env
 [ -x "$(command -v pixi)" ] && eval "$(pixi completion --shell zsh)"
 
@@ -127,8 +127,9 @@ export EDITOR=nvim
 test -e "${HOME}/.iterm2_shell_integration.zsh" && source "${HOME}/.iterm2_shell_integration.zsh"
 
 export PATH="$PATH:$HOME/google-cloud-sdk/bin"
-export PATH="$PATH:$HOME/bin"
-export PATH="$PATH:$HOME/bin_local"
+export PATH="$HOME/bin:$PATH"
+export PATH="$HOME/bin_local:$PATH"
+#export PATH="$PATH:$HOME/bin_local"
 export MODULAR_HOME="/Users/thomasfan/.modular"
 export PATH="/Users/thomasfan/.modular/pkg/packages.modular.com_mojo/bin:$PATH"
 export LESS='--chop-long-lines --HILITE-UNREAD --ignore-case --incsearch --jump-target=4 --LONG-PROMPT --no-init --quit-if-one-screen --RAW-CONTROL-CHARS --use-color --window=-4'
