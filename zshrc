@@ -1,4 +1,6 @@
-eval "$(/opt/homebrew/bin/brew shellenv)"
+export OS=$(uname)
+[ "$OS" == "Darwin" ] && eval "$(/opt/homebrew/bin/brew shellenv)"
+
 # If you come from bash you might have to change your $PATH.
 # export PATH=$HOME/bin:/usr/local/bin:$PATH
 
@@ -112,6 +114,7 @@ export XDG_CONFIG_HOME=$HOME/.config
 
 [ -x "$(command -v starship)" ] && eval "$(starship init zsh)"
 [ -f /opt/homebrew/etc/profile.d/autojump.sh ] && . /opt/homebrew/etc/profile.d/autojump.sh
+[ -f /usr/share/autojump/autojump.sh ] && . /usr/share/autojump/autojump.sh
 [ -x "$(command -v direnv)" ] && eval "$(direnv hook zsh)"
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
 [ -x "$(command -v mcfly)" ] && eval "$(mcfly init zsh)"
