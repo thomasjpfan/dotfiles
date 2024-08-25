@@ -117,6 +117,7 @@ export XDG_CONFIG_HOME=$HOME/.config
 [ -x "$(command -v direnv)" ] && eval "$(direnv hook zsh)"
 [ -x "$(command -v mcfly)" ] && eval "$(mcfly init zsh)"
 [ -x "$(command -v pixi)" ] && eval "$(pixi completion --shell zsh)"
+[ -x "$(command -v micromamba)" ] && eval "$(micromamba shell hook --shell zsh)"
 
 type nvim >/dev/null &&
     alias vi=nvim &&
@@ -135,25 +136,6 @@ export MCFLY_DISABLE_MENU=TRUE
 export MCFLY_KEY_SCHEME=vim
 
 function rg { command rg --json $@ | delta; }
-
-# >>> conda initialize >>>
-# !! Contents within this block are managed by 'conda init' !!
-__conda_setup="$('$HOME/miniforge3/bin/conda' 'shell.zsh' 'hook' 2>/dev/null)"
-if [ $? -eq 0 ]; then
-    eval "$__conda_setup"
-else
-    if [ -f "$HOME/miniforge3/etc/profile.d/conda.sh" ]; then
-        . "$HOME/miniforge3/etc/profile.d/conda.sh"
-    else
-        export PATH="$HOME/miniforge3/bin:$PATH"
-    fi
-fi
-unset __conda_setup
-
-if [ -f "$HOME/miniforge3/etc/profile.d/mamba.sh" ]; then
-    . "$HOME/miniforge3/etc/profile.d/mamba.sh"
-fi
-# <<< conda initialize <<<
 
 # The next line updates PATH for the Google Cloud SDK.
 if [ -f '$HOME/google-cloud-sdk/path.zsh.inc' ]; then . '$HOME/google-cloud-sdk/path.zsh.inc'; fi
@@ -175,10 +157,12 @@ setopt HIST_IGNORE_SPACE
 # Don't store history commands
 setopt HIST_NO_STORE
 
+export MAMBA_ROOT_PREFIX=$HOME/micromamba
+
 alias k=kubectl
 alias kctx=kubectx
 alias ls='lsd'
-alias m=mamba
+alias m=micromamba
 alias p=less
 alias py='python -m pdb -c c'
 alias mux=tmuxinator

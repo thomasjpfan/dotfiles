@@ -17,15 +17,6 @@ sh -c "$(curl -fsSL https://raw.github.com/ohmyzsh/ohmyzsh/master/tools/install.
 brew bundle install
 ```
 
-## Install conda
-
-Follow instructions at: https://github.com/conda-forge/miniforge#mambaforge
-
-```bash
-curl -L -O https://github.com/conda-forge/miniforge#install
-bash Miniforge3-$(uname)-$(uname -m).sh
-```
-
 ## Link
 
 ```bash
@@ -71,6 +62,8 @@ sh osx_setup.sh
 sudo apt install zsh neovim tmux fzf
 curl -sS https://starship.rs/install.sh | sh
 curl -sSfL https://raw.githubusercontent.com/ajeetdsouza/zoxide/main/install.sh | sh
+"${SHELL}" <(curl -L micro.mamba.pm/install.sh)
+
 curl --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs | sh
 cargo install lsd
 
