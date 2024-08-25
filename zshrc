@@ -111,8 +111,6 @@ export PATH="$PATH:$HOME/mambaforge/condabin"
 export PATH=$PATH:$HOME/.pixi/bin
 export XDG_CONFIG_HOME=$HOME/.config
 
-[ -f /opt/homebrew/etc/profile.d/autojump.sh ] && . /opt/homebrew/etc/profile.d/autojump.sh
-[ -f /usr/share/autojump/autojump.sh ] && . /usr/share/autojump/autojump.sh
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
 [ -x "$(command -v starship)" ] && eval "$(starship init zsh)"
 [ -x "$(command -v zoxide)" ] && eval "$(zoxide init zsh)"
@@ -182,7 +180,6 @@ alias kctx=kubectx
 alias ls='lsd'
 alias m=mamba
 alias p=less
-alias gswr='git switch-recent'
 alias py='python -m pdb -c c'
 alias mux=tmuxinator
 alias cythonX="cython -X language_level=3 -X boundscheck=False -X wraparound=False -X initializedcheck=False -X nonecheck=False -X cdivision=True"

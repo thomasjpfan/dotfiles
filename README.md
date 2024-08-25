@@ -68,9 +68,11 @@ sh osx_setup.sh
 1. Install dependencies
 
 ```
-sudo apt install zsh neovim tmux
+sudo apt install zsh neovim tmux fzf
 curl -sS https://starship.rs/install.sh | sh
 curl -sSfL https://raw.githubusercontent.com/ajeetdsouza/zoxide/main/install.sh | sh
+curl --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs | sh
+cargo install lsd
 ```
 
 2. Install oh-my-zsh
