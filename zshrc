@@ -3,7 +3,7 @@ eval "$(/opt/homebrew/bin/brew shellenv)"
 # export PATH=$HOME/bin:/usr/local/bin:$PATH
 
 # Path to your oh-my-zsh installation.
-export ZSH="/Users/thomasfan/.oh-my-zsh"
+export ZSH="$HOME/.oh-my-zsh"
 
 # Set name of the theme to load --- if set to "random", it will
 # load a random theme each time oh-my-zsh is loaded, in which case,
@@ -107,10 +107,10 @@ export HOMEBREW_NO_AUTO_UPDATE=1
 export PATH="/opt/homebrew/opt/gnu-time/libexec/gnubin:$PATH"
 export PATH="$HOME/.local/bin:$PATH"
 export PATH="$PATH:$HOME/mambaforge/condabin"
-export PATH=$PATH:/Users/thomasfan/.pixi/bin
+export PATH=$PATH:$HOME/.pixi/bin
 export XDG_CONFIG_HOME=$HOME/.config
 
-eval "$(starship init zsh)"
+[ -x "$(command -v starship)" ] && eval "$(starship init zsh)"
 [ -f /opt/homebrew/etc/profile.d/autojump.sh ] && . /opt/homebrew/etc/profile.d/autojump.sh
 [ -x "$(command -v direnv)" ] && eval "$(direnv hook zsh)"
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
@@ -129,9 +129,6 @@ test -e "${HOME}/.iterm2_shell_integration.zsh" && source "${HOME}/.iterm2_shell
 export PATH="$PATH:$HOME/google-cloud-sdk/bin"
 export PATH="$HOME/bin:$PATH"
 export PATH="$HOME/bin_local:$PATH"
-#export PATH="$PATH:$HOME/bin_local"
-export MODULAR_HOME="/Users/thomasfan/.modular"
-export PATH="/Users/thomasfan/.modular/pkg/packages.modular.com_mojo/bin:$PATH"
 export LESS='--chop-long-lines --HILITE-UNREAD --ignore-case --incsearch --jump-target=4 --LONG-PROMPT --no-init --quit-if-one-screen --RAW-CONTROL-CHARS --use-color --window=-4'
 export RIPGREP_CONFIG_PATH=$HOME/.config/ripgreprc
 export MCFLY_DISABLE_MENU=TRUE
@@ -141,28 +138,28 @@ function rg { command rg --json $@ | delta; }
 
 # >>> conda initialize >>>
 # !! Contents within this block are managed by 'conda init' !!
-__conda_setup="$('/Users/thomasfan/miniforge3/bin/conda' 'shell.zsh' 'hook' 2>/dev/null)"
+__conda_setup="$('$HOME/miniforge3/bin/conda' 'shell.zsh' 'hook' 2>/dev/null)"
 if [ $? -eq 0 ]; then
     eval "$__conda_setup"
 else
-    if [ -f "/Users/thomasfan/miniforge3/etc/profile.d/conda.sh" ]; then
-        . "/Users/thomasfan/miniforge3/etc/profile.d/conda.sh"
+    if [ -f "$HOME/miniforge3/etc/profile.d/conda.sh" ]; then
+        . "$HOME/miniforge3/etc/profile.d/conda.sh"
     else
-        export PATH="/Users/thomasfan/miniforge3/bin:$PATH"
+        export PATH="$HOME/miniforge3/bin:$PATH"
     fi
 fi
 unset __conda_setup
 
-if [ -f "/Users/thomasfan/miniforge3/etc/profile.d/mamba.sh" ]; then
-    . "/Users/thomasfan/miniforge3/etc/profile.d/mamba.sh"
+if [ -f "$HOME/miniforge3/etc/profile.d/mamba.sh" ]; then
+    . "$HOME/miniforge3/etc/profile.d/mamba.sh"
 fi
 # <<< conda initialize <<<
 
 # The next line updates PATH for the Google Cloud SDK.
-if [ -f '/Users/thomasfan/google-cloud-sdk/path.zsh.inc' ]; then . '/Users/thomasfan/google-cloud-sdk/path.zsh.inc'; fi
+if [ -f '$HOME/google-cloud-sdk/path.zsh.inc' ]; then . '$HOME/google-cloud-sdk/path.zsh.inc'; fi
 
 # The next line enables shell command completion for gcloud.
-if [ -f '/Users/thomasfan/google-cloud-sdk/completion.zsh.inc' ]; then . '/Users/thomasfan/google-cloud-sdk/completion.zsh.inc'; fi
+if [ -f '$HOME/google-cloud-sdk/completion.zsh.inc' ]; then . '$HOME/google-cloud-sdk/completion.zsh.inc'; fi
 
 HISTFILE="$HOME/.zsh_history"
 
