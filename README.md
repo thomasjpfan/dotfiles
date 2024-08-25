@@ -1,4 +1,4 @@
-# Check list for new Mac
+# My Dotfiles
 
 ```bash
 git clone https://github.com/thomasjpfan/dotfiles --recurse-submodules
@@ -82,7 +82,7 @@ sh -c "$(curl -fsSL https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/mas
 3. Link .zshrc
 
 ```
-ln -sf ~/dotfiles/zshrc ~/.zshrc`
+ln -sf ~/dotfiles/zshrc ~/.zshrc
 ```
 
 4. Link files
@@ -93,6 +93,8 @@ mkdir -p ~/.config/nvim
 ln -s -f ~/dotfiles/tmux.conf ~/.tmux.conf
 ln -sf ~/dotfiles/nvim-config.init ~/.config/nvim/init.vim
 ln -sf ~/dotfiles/condarc ~/.condarc
+
+mkdir -p ~/.config/git
 ln -sf ~/dotfiles/git-linux/gitconfig ~/.config/git/config
 ln -sf ~/dotfiles/gitignore_global ~/.config/git/ignore
 ln -sf ~/dotfiles/direnvrc ~/.direnvrc
