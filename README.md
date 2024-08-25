@@ -73,6 +73,9 @@ curl -sS https://starship.rs/install.sh | sh
 curl -sSfL https://raw.githubusercontent.com/ajeetdsouza/zoxide/main/install.sh | sh
 curl --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs | sh
 cargo install lsd
+
+$ curl -LO https://github.com/BurntSushi/ripgrep/releases/download/14.1.0/ripgrep_14.1.0-1_amd64.deb
+$ sudo dpkg -i ripgrep_14.1.0-1_amd64.deb
 ```
 
 2. Install oh-my-zsh
