@@ -1,5 +1,4 @@
-export OS=$(uname)
-[ "$OS" == "Darwin" ] && eval "$(/opt/homebrew/bin/brew shellenv)"
+[ -x "$(command -v /opt/homebrew/bin/brew)" ] && eval "$(/opt/homebrew/bin/brew shellenv)"
 
 # If you come from bash you might have to change your $PATH.
 # export PATH=$HOME/bin:/usr/local/bin:$PATH
@@ -66,7 +65,7 @@ ZSH_THEME=""
 # HIST_STAMPS="mm/dd/yyyy"
 
 # Would you like to use another custom folder than $ZSH/custom?
-ZSH_CUSTOM=$HOME/osx_dotfiles/zsh_custom
+ZSH_CUSTOM=$HOME/dotfiles/zsh_custom
 
 # Which plugins would you like to load?
 # Standard plugins can be found in $ZSH/plugins/
@@ -112,13 +111,13 @@ export PATH="$PATH:$HOME/mambaforge/condabin"
 export PATH=$PATH:$HOME/.pixi/bin
 export XDG_CONFIG_HOME=$HOME/.config
 
-[ -x "$(command -v starship)" ] && eval "$(starship init zsh)"
 [ -f /opt/homebrew/etc/profile.d/autojump.sh ] && . /opt/homebrew/etc/profile.d/autojump.sh
 [ -f /usr/share/autojump/autojump.sh ] && . /usr/share/autojump/autojump.sh
-[ -x "$(command -v direnv)" ] && eval "$(direnv hook zsh)"
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
+[ -x "$(command -v starship)" ] && eval "$(starship init zsh)"
+[ -x "$(command -v zoxide)" ] && eval "$(zoxide init zsh)"
+[ -x "$(command -v direnv)" ] && eval "$(direnv hook zsh)"
 [ -x "$(command -v mcfly)" ] && eval "$(mcfly init zsh)"
-[ -f ~/.rye/env ] && source $HOME/.rye/env
 [ -x "$(command -v pixi)" ] && eval "$(pixi completion --shell zsh)"
 
 type nvim >/dev/null &&

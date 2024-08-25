@@ -1,7 +1,7 @@
 # Check list for new Mac
 
 ```bash
-git clone https://github.com/thomasjpfan/osx_dotfiles --recurse-submodules
+git clone https://github.com/thomasjpfan/dotfiles --recurse-submodules
 ```
 
 ## ZSH
@@ -29,26 +29,26 @@ bash Miniforge3-$(uname)-$(uname -m).sh
 ## Link
 
 ```bash
-ln -sf ~/osx_dotfiles/tmux.conf ~/.tmux.conf
-ln -sf ~/osx_dotfiles/zshrc ~/.zshrc
-ln -sf ~/osx_dotfiles/condarc ~/.condarc
+ln -sf ~/dotfiles/tmux.conf ~/.tmux.conf
+ln -sf ~/dotfiles/zshrc ~/.zshrc
+ln -sf ~/dotfiles/condarc ~/.condarc
 
 mkdir -p ~/.config/git
-ln -sf ~/osx_dotfiles/gitconfig.ini ~/.config/git/config
-ln -sf ~/osx_dotfiles/gitignore_global ~/.config/git/ignore
-ln -sf ~/osx_dotfiles/gitattributes ~/.config/git/attributes
-ln -sf ~/osx_dotfiles/ripgreprc ~/.config/ripgreprc
+ln -sf ~/dotfiles/gitconfig.ini ~/.config/git/config
+ln -sf ~/dotfiles/gitignore_global ~/.config/git/ignore
+ln -sf ~/dotfiles/gitattributes ~/.config/git/attributes
+ln -sf ~/dotfiles/ripgreprc ~/.config/ripgreprc
 
-ln -sf ~/osx_dotfiles/bin ~/bin
-ln -sf ~/osx_dotfiles/direnvrc ~/.direnvrc
+ln -sf ~/dotfiles/bin ~/bin
+ln -sf ~/dotfiles/direnvrc ~/.direnvrc
 mkdir -p ~/.config/karabiner
 mkdir -p ~/.jupyter
-ln -sf ~/osx_dotfiles/karabiner.json  ~/.config/karabiner/karabiner.json
-ln -sf ~/osx_dotfiles/jupyter_config.json ~/.jupyter/jupyter_config.json
-ln -sf ~/osx_dotfiles/starship.toml ~/.config/starship.toml
+ln -sf ~/dotfiles/karabiner.json  ~/.config/karabiner/karabiner.json
+ln -sf ~/dotfiles/jupyter_config.json ~/.jupyter/jupyter_config.json
+ln -sf ~/dotfiles/starship.toml ~/.config/starship.toml
 
 mkdir -p ~/.config/nvim
-ln -sf ~/osx_dotfiles/nvim-config.vim ~/.config/nvim/init.vim
+ln -sf ~/dotfiles/nvim-config.vim ~/.config/nvim/init.vim
 ```
 
 ## Install vim plugins
@@ -61,4 +61,45 @@ nvim +PlugInstall +qall
 
 ```bash
 sh osx_setup.sh
+```
+
+# Linux
+
+1. Install dependencies
+
+```
+sudo apt install zsh neovim tmux
+curl -sS https://starship.rs/install.sh | sh
+curl -sSfL https://raw.githubusercontent.com/ajeetdsouza/zoxide/main/install.sh | sh
+```
+
+2. Install oh-my-zsh
+
+```
+sh -c "$(curl -fsSL https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/master/tools/install.sh)"
+```
+
+3. Link .zshrc
+
+```
+ln -sf ~/dotfiles/zshrc ~/.zshrc`
+```
+
+4. Link files
+
+```
+mkdir -p ~/.config/nvim
+
+ln -s -f ~/dotfiles/tmux.conf ~/.tmux.conf
+ln -sf ~/dotfiles/nvim-config.init ~/.config/nvim/init.vim
+ln -sf ~/dotfiles/condarc ~/.condarc
+ln -sf ~/dotfiles/git-linux/gitconfig ~/.config/git/config
+ln -sf ~/dotfiles/gitignore_global ~/.config/git/ignore
+ln -sf ~/dotfiles/direnvrc ~/.direnvrc
+```
+
+5. Install neovim plugins:
+
+```
+nvim +PlugInstall +qall
 ```

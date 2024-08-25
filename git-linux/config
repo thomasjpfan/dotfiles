@@ -1,0 +1,41 @@
+[core]
+    quotepath = false
+    excludesfile = ~/.gitignore_global
+    autocrlf = input
+[user]
+	name = Thomas J. Fan
+	email = thomasjpfan@gmail.com
+    signingkey = C6568940AC51A821
+[push]
+    default = simple
+[alias]
+    slog = log --oneline --topo-order --graph
+    ds = difftool --staged      # git ds - diff your staged changes == review before committing.
+[branch]
+    autosetuprebase = always
+    autoSetupMerge = false
+[pull]
+    rebase = true
+[rerere]
+    enabled = true
+[color]
+    ui = true
+[credential "https://github.com"]
+    username = thomasjpfan
+[commit]
+	gpgsign = true
+[fetch]
+	parallel = 0
+[init]
+	defaultBranch = main
+[credential]
+	helper = store
+
+[delta]
+    navigate = true
+    line-numbers = true
+
+[interactive]
+    diffFilter = delta --color-only --features=interactive
+[blame]
+    ignoreRevsFile = .git-blame-ignore-revs
