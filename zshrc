@@ -113,7 +113,7 @@ export XDG_CONFIG_HOME=$HOME/.config
 
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
 [ -x "$(command -v starship)" ] && eval "$(starship init zsh)"
-[ -x "$(command -v zoxide)" ] && eval "$(zoxide init zsh)"
+[ -x "$(command -v zoxide)" ] && eval "$(zoxide init zsh --cmd j)"
 [ -x "$(command -v direnv)" ] && eval "$(direnv hook zsh)"
 [ -x "$(command -v mcfly)" ] && eval "$(mcfly init zsh)"
 [ -x "$(command -v pixi)" ] && eval "$(pixi completion --shell zsh)"
