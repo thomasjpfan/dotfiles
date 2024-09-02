@@ -111,7 +111,8 @@ export PATH="$PATH:$HOME/mambaforge/condabin"
 export PATH=$PATH:$HOME/.pixi/bin
 export XDG_CONFIG_HOME=$HOME/.config
 
-[ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
+[ -f $HOME/.fzf.zsh ] && source $HOME/.fzf.zsh
+[ -f $HOME/.cargo/env ] && source $HOME/.cargo/env
 [ -x "$(command -v starship)" ] && eval "$(starship init zsh)"
 [ -x "$(command -v zoxide)" ] && eval "$(zoxide init zsh --cmd j)"
 [ -x "$(command -v direnv)" ] && eval "$(direnv hook zsh)"
@@ -168,3 +169,5 @@ alias py='python -m pdb -c c'
 alias mux=tmuxinator
 alias cythonX="cython -X language_level=3 -X boundscheck=False -X wraparound=False -X initializedcheck=False -X nonecheck=False -X cdivision=True"
 alias gb="git checkout \$(git for-each-ref --sort=-committerdate --format='%(refname:short)' refs/heads/ | fzf)"
+alias ipy-install="python -m ipykernel install --user --name"
+alias wakeub="ssh mini -t 'bash -i -c "wake"'"
