@@ -99,8 +99,8 @@ ln -sf  ~/dotfiles/nvim-config.vim ~/.config/nvim/init.vim
 ln -sf ~/dotfiles/condarc ~/.condarc
 
 mkdir -p ~/.config/git
-ln -sf ~/dotfiles/git-linux/gitconfig ~/.config/git/config
-ln -sf ~/dotfiles/gitignore_global ~/.config/git/ignore
+ln -sf  ~/dotfiles/git-linux/config ~/.config/git/config
+ln -sf  ~/dotfiles/gitignore_global ~/.config/git/ignore
 ln -sf ~/dotfiles/direnvrc ~/.direnvrc
 ```
 
