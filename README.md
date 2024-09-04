@@ -64,9 +64,6 @@ curl -sS https://starship.rs/install.sh | sh
 curl -sSfL https://raw.githubusercontent.com/ajeetdsouza/zoxide/main/install.sh | sh
 "${SHELL}" <(curl -L micro.mamba.pm/install.sh)
 
-curl --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs | sh
-cargo install lsd
-
 $ curl -LO https://github.com/BurntSushi/ripgrep/releases/download/14.1.0/ripgrep_14.1.0-1_amd64.deb
 $ sudo dpkg -i ripgrep_14.1.0-1_amd64.deb
 ```
@@ -81,15 +78,24 @@ sh -c "$(curl -fsSL https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/mas
 
 ```
 ln -sf ~/dotfiles/zshrc ~/.zshrc
+
+source ~/.zshrc
 ```
 
-4. Link files
+4. Install `lsd`
+
+```
+curl --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs | sh
+cargo install lsd
+```
+
+5. Link files
 
 ```
 mkdir -p ~/.config/nvim
 
 ln -s -f ~/dotfiles/tmux.conf ~/.tmux.conf
-ln -sf ~/dotfiles/nvim-config.init ~/.config/nvim/init.vim
+ln -sf  ~/dotfiles/nvim-config.vim ~/.config/nvim/init.vim
 ln -sf ~/dotfiles/condarc ~/.condarc
 
 mkdir -p ~/.config/git
