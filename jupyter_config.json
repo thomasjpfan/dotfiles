@@ -1,8 +1,4 @@
 {
-    "CondaKernelSpecManager": {
-        "name_format": "{environment} ({kernel})",
-        "kernelspec_path": "--user"
-    },
     "ServerApp": {
         "token": "",
         "password": "",

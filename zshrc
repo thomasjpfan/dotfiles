@@ -135,6 +135,7 @@ export LESS='--chop-long-lines --HILITE-UNREAD --ignore-case --incsearch --jump-
 export RIPGREP_CONFIG_PATH=$HOME/.config/ripgreprc
 export MCFLY_DISABLE_MENU=TRUE
 export MCFLY_KEY_SCHEME=vim
+export GPG_TTY=$(tty)
 
 function rg { command rg --json $@ | delta; }
 
