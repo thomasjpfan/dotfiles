@@ -4,14 +4,15 @@
         "check_for_updates_on_startup": true,
         "show_in_menu_bar": false,
         "show_profile_name_in_menu_bar": false,
-        "unsafe_ui": false
+        "unsafe_ui": false,
+        "basic.to_delayed_action_delay_milliseconds": 250
     },
     "profiles": [
         {
             "complex_modifications": {
                 "parameters": {
                     "basic.simultaneous_threshold_milliseconds": 50,
-                    "basic.to_delayed_action_delay_milliseconds": 500,
+                    "basic.to_delayed_action_delay_milliseconds": 250,
                     "basic.to_if_alone_timeout_milliseconds": 1000,
                     "basic.to_if_held_down_threshold_milliseconds": 500,
                     "mouse_motion_to_scroll.speed": 100
@@ -347,8 +348,7 @@
                                 "to": [
                                     {
                                         "mouse_key": {
-                                            "vertical_wheel": -32,
-                                            "speed_multiplier": 1.5
+                                            "vertical_wheel": -32
                                         }
                                     }
                                 ],
@@ -369,8 +369,7 @@
                                 "to": [
                                     {
                                         "mouse_key": {
-                                            "vertical_wheel": 32,
-                                            "speed_multiplier": 1.5
+                                            "vertical_wheel": 32
                                         }
                                     }
                                 ],
