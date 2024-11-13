@@ -346,9 +346,7 @@
                                 },
                                 "to": [
                                     {
-                                        "mouse_key": {
-                                            "vertical_wheel": -32
-                                        }
+                                        "key_code": "page_down"
                                     }
                                 ],
                                 "type": "basic"
@@ -367,9 +365,7 @@
                                 },
                                 "to": [
                                     {
-                                        "mouse_key": {
-                                            "vertical_wheel": 32
-                                        }
+                                        "key_code": "page_up"
                                     }
                                 ],
                                 "type": "basic"
