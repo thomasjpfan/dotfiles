@@ -1,0 +1,188 @@
+{
+  "windowKeyPatterns" : [
+    {
+      "pattern" : ".* — [^\\w\\d]*(.)",
+      "id" : "com.sublimetext.4"
+    },
+    {
+      "id" : "com.sublimetext.3",
+      "pattern" : ".* — [^\\w\\d]*(.)"
+    },
+    {
+      "id" : "com.sublimetext.2",
+      "pattern" : ".* — [^\\w\\d]*(.)"
+    },
+    {
+      "pattern" : ".* — [^\\w\\d]*(.)",
+      "id" : "com.visualstudio.code.oss"
+    },
+    {
+      "pattern" : ".* — [^\\w\\d]*(.)",
+      "id" : "com.microsoft.VSCodiumInsiders"
+    },
+    {
+      "pattern" : ".* — [^\\w\\d]*(.)",
+      "id" : "com.microsoft.VSCode"
+    },
+    {
+      "id" : "com.microsoft.VSCodeInsiders",
+      "pattern" : ".* — [^\\w\\d]*(.)"
+    }
+  ],
+  "appSwitcherFeatures" : 2,
+  "windowKeyAssignments" : [
+
+  ],
+  "whenAlreadyFocusedAction" : 2,
+  "windowSwitcherAppearance" : "clean",
+  "appSortReverse" : false,
+  "enableStaticCycle" : false,
+  "ignoredKeys" : [
+
+  ],
+  "enableHideOnFocusHotkey" : false,
+  "showAppSwitcher" : true,
+  "keyTapThreshold" : 0.14,
+  "fnWindowSwitching" : false,
+  "appKeyAssignments" : [
+    {
+      "index" : 0,
+      "key" : "i",
+      "app" : {
+        "path" : "/Applications/iTerm.app",
+        "useCount" : 84,
+        "originalName" : "iTerm",
+        "switchCount" : 0,
+        "identifier" : "com.googlecode.iterm2:30296"
+      },
+      "whenAlreadyFocusedAction" : 2
+    },
+    {
+      "key" : "v",
+      "app" : {
+        "path" : "/Applications/Visual Studio Code.app",
+        "switchCount" : 0,
+        "identifier" : "com.microsoft.VSCode:95111",
+        "originalName" : "Visual Studio Code",
+        "useCount" : 24
+      },
+      "whenAlreadyFocusedAction" : 2,
+      "index" : 0
+    },
+    {
+      "key" : "o",
+      "index" : 0,
+      "whenAlreadyFocusedAction" : 2,
+      "app" : {
+        "path" : "/Applications/Obsidian.app",
+        "originalName" : "Obsidian",
+        "identifier" : "md.obsidian:12038",
+        "useCount" : 110,
+        "switchCount" : 0
+      }
+    },
+    {
+      "index" : 0,
+      "app" : {
+        "identifier" : "com.brave.Browser:72956",
+        "path" : "/Applications/Brave Browser.app",
+        "switchCount" : 0,
+        "originalName" : "Brave Browser",
+        "useCount" : 12
+      },
+      "whenAlreadyFocusedAction" : 2,
+      "key" : "b"
+    },
+    {
+      "app" : {
+        "path" : "/System/Volumes/Preboot/Cryptexes/App/System/Applications/Safari.app",
+        "originalName" : "Safari",
+        "useCount" : 5139,
+        "identifier" : "com.apple.Safari:6504",
+        "switchCount" : 0
+      },
+      "whenAlreadyFocusedAction" : 2,
+      "index" : 0,
+      "key" : "s"
+    },
+    {
+      "app" : {
+        "useCount" : 18,
+        "identifier" : "com.apple.Notes:72344",
+        "path" : "/System/Applications/Notes.app",
+        "switchCount" : 0,
+        "originalName" : "Notes"
+      },
+      "key" : "n",
+      "whenAlreadyFocusedAction" : 2,
+      "index" : 0
+    },
+    {
+      "app" : {
+        "originalName" : "Dash",
+        "path" : "/Applications/Dash.app",
+        "identifier" : "com.kapeli.dashdoc:2449",
+        "useCount" : 29,
+        "switchCount" : 0
+      },
+      "whenAlreadyFocusedAction" : 2,
+      "index" : 0,
+      "key" : "d"
+    },
+    {
+      "app" : {
+        "useCount" : 189,
+        "path" : "/System/Library/CoreServices/Finder.app",
+        "originalName" : "Finder",
+        "identifier" : "com.apple.finder:680",
+        "switchCount" : 0
+      },
+      "key" : "f",
+      "index" : 0,
+      "whenAlreadyFocusedAction" : 2
+    },
+    {
+      "index" : 0,
+      "app" : {
+        "originalName" : "GoodLinks",
+        "useCount" : 37,
+        "switchCount" : 0,
+        "identifier" : "com.ngocluu.goodlinks:54817",
+        "path" : "/Applications/GoodLinks.app"
+      },
+      "key" : "g",
+      "whenAlreadyFocusedAction" : 2
+    }
+  ],
+  "appSwitcherUseNumbersForWindows" : false,
+  "alwaysHideOthers" : false,
+  "windowSwitcherFeatures" : 57,
+  "zeroAsLastFocusedWindow" : false,
+  "minimizeOnlyFocusedWindowOnMinus" : true,
+  "triggerKeys" : [
+    4
+  ],
+  "minimizeKey" : "minus",
+  "enableAssignHotkey" : false,
+  "showWindowSwitcher" : true,
+  "enableCycleHotkey" : false,
+  "ignoredApps" : [
+
+  ],
+  "specialKey" : "equal",
+  "allowWindowSwitcher" : false,
+  "windowOnlySwitchOSDDelay" : 0,
+  "windowSwitchOSDDelay" : 150,
+  "focusOnKeyUp" : false,
+  "hideStaticSettings" : false,
+  "windowTriggerKeys" : [
+    1,
+    5
+  ],
+  "notificationsPermissionsGranted" : false,
+  "windowSwitcherDimFocused" : false,
+  "appSort" : "name",
+  "activateAllWindows" : true,
+  "hideOnlyFocusedAppOnMinus" : false,
+  "switcherScreenPlacement" : 7
+}
