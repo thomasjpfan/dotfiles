@@ -20,7 +20,6 @@ brew bundle install
 ## Link
 
 ```bash
-ln -sf ~/dotfiles/aerospace.toml  ~/.aerospace.toml
 ln -sf ~/dotfiles/tmux.conf ~/.tmux.conf
 ln -sf ~/dotfiles/zshrc ~/.zshrc
 ln -sf ~/dotfiles/condarc ~/.condarc
@@ -41,6 +40,10 @@ ln -sf ~/dotfiles/starship.toml ~/.config/starship.toml
 
 mkdir -p ~/.config/nvim
 ln -sf ~/dotfiles/nvim-config.vim ~/.config/nvim/init.vim
+```
+
+```bash
+ln -sf ~/dotfiles/espanso "$(espanso path config)"
 ```
 
 ## Install vim plugins
