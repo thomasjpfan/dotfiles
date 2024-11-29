@@ -1,0 +1,188 @@
+{
+  "zeroAsLastFocusedWindow" : false,
+  "windowSwitcherDimFocused" : false,
+  "appSort" : "name",
+  "focusOnKeyUp" : false,
+  "appKeyAssignments" : [
+    {
+      "whenAlreadyFocusedAction" : 2,
+      "index" : 0,
+      "key" : "i",
+      "app" : {
+        "path" : "/Applications/iTerm.app",
+        "useCount" : 84,
+        "identifier" : "com.googlecode.iterm2:30296",
+        "originalName" : "iTerm",
+        "switchCount" : 0
+      }
+    },
+    {
+      "app" : {
+        "originalName" : "Visual Studio Code",
+        "switchCount" : 0,
+        "useCount" : 24,
+        "path" : "/Applications/Visual Studio Code.app",
+        "identifier" : "com.microsoft.VSCode:95111"
+      },
+      "whenAlreadyFocusedAction" : 2,
+      "index" : 0,
+      "key" : "v"
+    },
+    {
+      "index" : 0,
+      "key" : "o",
+      "whenAlreadyFocusedAction" : 2,
+      "app" : {
+        "identifier" : "md.obsidian:12038",
+        "switchCount" : 0,
+        "useCount" : 110,
+        "path" : "/Applications/Obsidian.app",
+        "originalName" : "Obsidian"
+      }
+    },
+    {
+      "key" : "b",
+      "app" : {
+        "useCount" : 12,
+        "identifier" : "com.brave.Browser:72956",
+        "path" : "/Applications/Brave Browser.app",
+        "switchCount" : 0,
+        "originalName" : "Brave Browser"
+      },
+      "index" : 0,
+      "whenAlreadyFocusedAction" : 2
+    },
+    {
+      "app" : {
+        "useCount" : 5139,
+        "path" : "/System/Volumes/Preboot/Cryptexes/App/System/Applications/Safari.app",
+        "switchCount" : 0,
+        "identifier" : "com.apple.Safari:6504",
+        "originalName" : "Safari"
+      },
+      "index" : 0,
+      "whenAlreadyFocusedAction" : 2,
+      "key" : "s"
+    },
+    {
+      "whenAlreadyFocusedAction" : 2,
+      "app" : {
+        "useCount" : 18,
+        "path" : "/System/Applications/Notes.app",
+        "originalName" : "Notes",
+        "identifier" : "com.apple.Notes:72344",
+        "switchCount" : 0
+      },
+      "key" : "n",
+      "index" : 0
+    },
+    {
+      "index" : 0,
+      "whenAlreadyFocusedAction" : 2,
+      "key" : "d",
+      "app" : {
+        "useCount" : 29,
+        "identifier" : "com.kapeli.dashdoc:2449",
+        "path" : "/Applications/Dash.app",
+        "originalName" : "Dash",
+        "switchCount" : 0
+      }
+    },
+    {
+      "app" : {
+        "path" : "/System/Library/CoreServices/Finder.app",
+        "identifier" : "com.apple.finder:680",
+        "switchCount" : 0,
+        "originalName" : "Finder",
+        "useCount" : 189
+      },
+      "whenAlreadyFocusedAction" : 2,
+      "key" : "f",
+      "index" : 0
+    },
+    {
+      "app" : {
+        "identifier" : "com.ngocluu.goodlinks:54817",
+        "originalName" : "GoodLinks",
+        "switchCount" : 0,
+        "useCount" : 37,
+        "path" : "/Applications/GoodLinks.app"
+      },
+      "index" : 0,
+      "whenAlreadyFocusedAction" : 2,
+      "key" : "g"
+    }
+  ],
+  "windowOnlySwitchOSDDelay" : 0,
+  "windowSwitcherAppearance" : "clean",
+  "appSwitcherUseNumbersForWindows" : false,
+  "windowKeyAssignments" : [
+
+  ],
+  "activateAllWindows" : true,
+  "ignoredKeys" : [
+
+  ],
+  "whenAlreadyFocusedAction" : 2,
+  "alwaysHideOthers" : false,
+  "minimizeOnlyFocusedWindowOnMinus" : true,
+  "fnWindowSwitching" : false,
+  "allowWindowSwitcher" : false,
+  "showWindowSwitcher" : true,
+  "appSwitcherFeatures" : 2,
+  "keyTapThreshold" : 0.14,
+  "appSortReverse" : false,
+  "notificationsPermissionsGranted" : false,
+  "specialKey" : "equal",
+  "enableAssignHotkey" : false,
+  "windowTriggerKeys" : [
+    1,
+    5
+  ],
+  "minimizeKey" : "minus",
+  "windowSwitcherFeatures" : 57,
+  "triggerKeys" : [
+    4
+  ],
+  "enableHideOnFocusHotkey" : false,
+  "hideOnlyFocusedAppOnMinus" : false,
+  "windowKeyPatterns" : [
+    {
+      "pattern" : ".* — [^\\w\\d]*(.)",
+      "id" : "com.sublimetext.4"
+    },
+    {
+      "id" : "com.sublimetext.3",
+      "pattern" : ".* — [^\\w\\d]*(.)"
+    },
+    {
+      "pattern" : ".* — [^\\w\\d]*(.)",
+      "id" : "com.sublimetext.2"
+    },
+    {
+      "pattern" : ".* — [^\\w\\d]*(.)",
+      "id" : "com.visualstudio.code.oss"
+    },
+    {
+      "id" : "com.microsoft.VSCodiumInsiders",
+      "pattern" : ".* — [^\\w\\d]*(.)"
+    },
+    {
+      "pattern" : ".* — [^\\w\\d]*(.)",
+      "id" : "com.microsoft.VSCode"
+    },
+    {
+      "pattern" : ".* — [^\\w\\d]*(.)",
+      "id" : "com.microsoft.VSCodeInsiders"
+    }
+  ],
+  "showAppSwitcher" : true,
+  "enableStaticCycle" : false,
+  "hideStaticSettings" : false,
+  "ignoredApps" : [
+
+  ],
+  "switcherScreenPlacement" : 7,
+  "windowSwitchOSDDelay" : 350,
+  "enableCycleHotkey" : false
+}
