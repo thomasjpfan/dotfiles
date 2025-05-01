@@ -1,4 +1,4 @@
-"automated installation of vimplug if not installed
+"automated installation of vimplug if not installed 
 if empty(glob('~/.local/share/nvim/site/autoload/plug.vim'))
     silent !curl -fLo ~/.local/share/nvim/site/autoload/plug.vim --create-dirs
         \ https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim
@@ -19,9 +19,6 @@ call plug#end()
 " like <leader>w saves the current file
 let mapleader = " "
 let g:mapleader = " "
-
-" Fast saving
-nmap <leader>w :w!<cr>
 
 " Ignore compiled files
 set wildignore=*.o,*~,*.pyc,*/.git/*,*/.hg/*,*/.svn/*,*/.DS_Store
@@ -116,10 +113,16 @@ let g:lightline = {
 
 
 " easy-motion
+let g:EasyMotion_do_mapping = 0 " Disable default mappings
+
 " Move to line
 map <Leader>l <Plug>(easymotion-bd-jk)
 nmap <Leader>l <Plug>(easymotion-overwin-line)
 
 " Move to word
-map  <Leader>w <Plug>(easymotion-bd-w)
+map  <Leader>w <Plug>(easymotion-w)
 nmap <Leader>w <Plug>(easymotion-overwin-w)
+
+" JK motions: Line motions
+map <Leader>j <Plug>(easymotion-j)
+map <Leader>k <Plug>(easymotion-k)
