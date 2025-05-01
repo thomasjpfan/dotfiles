@@ -121,7 +121,7 @@ nmap <Leader>l <Plug>(easymotion-overwin-line)
 
 " Move to word
 map  <Leader>w <Plug>(easymotion-w)
-nmap <Leader>w <Plug>(easymotion-overwin-w)
+map  <Leader>b <Plug>(easymotion-b)
 
 " JK motions: Line motions
 map <Leader>j <Plug>(easymotion-j)
