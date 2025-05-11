@@ -10,9 +10,10 @@ call plug#begin('~/.config/nvim/plugged')
 Plug 'sickill/vim-monokai'
 Plug 'itchyny/lightline.vim'
 Plug 'tpope/vim-commentary'
-Plug 'airblade/vim-gitgutter'
 Plug 'tpope/vim-surround'
 Plug 'easymotion/vim-easymotion'
+Plug 'nvim-lua/plenary.nvim'
+Plug 'nvim-telescope/telescope.nvim', { 'tag': '0.1.8' }
 
 call plug#end()
 
@@ -126,3 +127,10 @@ map  <Leader>b <Plug>(easymotion-b)
 " JK motions: Line motions
 map <Leader>j <Plug>(easymotion-j)
 map <Leader>k <Plug>(easymotion-k)
+
+" Find files using Telescope command-line sugar.
+nnoremap <leader>ff <cmd>Telescope find_files<cr>
+nnoremap <leader>fg <cmd>Telescope live_grep<cr>
+nnoremap <leader>fb <cmd>Telescope buffers<cr>
+nnoremap <leader>fh <cmd>Telescope help_tags<cr>
+
