@@ -77,3 +77,9 @@ defaults write com.apple.dock expose-animation-duration -float 0.15
 defaults write com.apple.dock autohide-delay -float 0
 # Remove the animation when hiding/showing the Dock
 defaults write com.apple.dock autohide-time-modifier -float 0
+
+defaults write com.microsoft.VSCode ApplePressAndHoldEnabled -bool false            # For VS Code
+defaults write com.microsoft.VSCodeInsiders ApplePressAndHoldEnabled -bool false    # For VS Code Insider
+defaults write com.vscodium ApplePressAndHoldEnabled -bool false                    # For VS Codium
+defaults write com.microsoft.VSCodeExploration ApplePressAndHoldEnabled -bool false # For VS Codium Exploration users
+defaults delete -g ApplePressAndHoldEnabled                                         # If necessary, reset global default
